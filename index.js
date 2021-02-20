@@ -112,4 +112,4 @@ const main = async (siteName) => {
     handleCORS(`${dirPath}/${target}`)
 }
 
-main('www.zappos.com')
+main('www.prezzybox.com')

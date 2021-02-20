@@ -1,0 +1,31 @@
+﻿
+
+<div class="mini-cart" ng-class="{'products-in-basket' : orderData.OrderProducts.length > 0, 'show-overview' : showOverview}">
+    <div ng-click="cartClick()">
+        <i class="mini-cart__icon" ng-class="{'fal fa-shopping-cart' : !orderData.OrderProducts.length, 'fas fa-shopping-cart' : orderData.OrderProducts.length > 0}"></i>
+        <p class="mini-cart__cart-total" ng-show="orderData.OrderProducts.length > 0">
+            {{orderData.OrderProducts.length}}
+        </p>
+    </div>
+
+
+
+    <div class="cart-overview">
+        <ul class="cart-overview__list">
+            <li class="cart-overview__item" ng-repeat="product in orderData.OrderProducts">
+                <p class="bold">{{product.Product.Title}}</p>
+                <p class="bold">Quantity: {{product.Quantity}}</p>
+                <p class="bold">Price: £{{product.PricePaid}}</p>
+            </li>
+        </ul>
+        <div class="cart-overview__button-container">
+            <div class="cart-overview__total">
+                <p class="bold">Total: £{{orderData.ProductTotal | number : 2}}</p>
+            </div>
+
+            <div class="cart-overview__button">
+                <a href="/order/cart" class="btn btn--small">Go To Checkout</a>
+            </div>
+        </div>
+    </div>
+</div>

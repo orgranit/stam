@@ -1,0 +1,74 @@
+﻿
+
+<form class="input-group search-box__input-group" ng-class="{'add-border' : autocompleteData || loading}" autocomplete="off">
+    <input class="search-box__input bold" id="Search" data-unittest-id="searchInput" type="text" placeholder="Search for the perfect gift..." aria-label="Search" ng-keyup="checkKeyPress($event)" ng-model="searchTerm">
+    <div class="input-group-addon search-icon" ng-click="getSearchTerm()">
+        <i class="fal fa-search fa-lg"></i>
+    </div>
+    <div class="input-group-addon close-button" ng-click="showSearch = !showSearch">
+        <i class="fal fa-times"></i>
+    </div>
+</form>
+<div class="autocomplete-container" ng-show="showSearch && (autocompleteData || loading)" ng-class="{'autocomplete-container--remove-scroll-bar' : noSearchResults}">
+
+    <div ng-show="loading" class="loading-spinner">
+        <i class="fa-spin fal fa-spinner-third"> </i><span class="loading-spinner__text">Searching</span>
+    </div>
+
+
+    <div ng-show="!loading && noSearchResults" class="no-search-results">
+        <h3 class="no-search-results__title-text">Looks like we couldn't find anything matching that word.</h3>
+        <h3 class="no-search-results__title-text">To find your perfect gift (we have thousands!), just try:</h3>
+        <ul class="no-search-results__list">
+            <li class="no-search-results__list-item">using fewer words in the search</li>
+            <li class="no-search-results__list-item">using a different phrase</li>
+            <li class="no-search-results__list-item">checking for spelling errors</li>
+            <li class="no-search-results__list-item">checking out our awesome <a class="link-highlight" href="/new-gifts.aspx">new products</a></li>
+            <li class="no-search-results__list-item">using our <a class="link-highlight" href="/app/giftwizard">gift wizard!</a></li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <h2 ng-hide="loading || noSearchResults || autocompleteData.Categories.length == 0" class="col-xs-12 autocomplete-categories__title">{{autocompleteData.Categories.length}} {{autocompleteData.Categories.length > 1 ? 'Categories' : 'Category'}}</h2>
+        <ul ng-hide="loading" class="col-xs-12 autocomplete-categories bold">
+            <li class="autocomplete-categories__item"
+                ng-repeat="item in autocompleteData.Categories"
+                ng-class="{'selected bold' : item.$selected}"
+                ng-click="clickItem(item.RelativeUrl)"
+                id="{{item.Id}}"
+                ga-click-event
+                event-category="'Search'"
+                event-action="'Autocomplete Click'"
+                event-label="'Category Click > ' + item.Title ">
+                <span class="autocomplete-categories__content">
+                    {{item.Title}} ({{item.CategoryProductsCount}})
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div ng-hide="loading || noSearchResults" class="autocomplete-products col-xs-12">
+            <div class="row">
+                <h2 class="autocomplete-products__title col-xs-12 col-sm-6">Our top <span class="autocomplete-products__search-term">"{{searchTerm}}"</span> products </h2>
+                <h3 class="autocomplete-products__total col-xs-12 col-sm-6"><a href="{{searchUrl}}" ga-click-event event-category="'Search'" event-action="'See Full Search Results Link'" event-label="'Search Term: ' + searchTerm">View all</a></h3>
+            </div>
+            <div class="row">
+                <div class="autocomplete-item col-xs-6 col-sm-3" ng-repeat="item in autocompleteData.Products" ng-click="clickItem(item.RelativeUrl)" ng-class="{'selected' : item.$selected}"
+                     ga-click-event
+                     event-category="'Search'"
+                     event-action="'Autocomplete Click'"
+                     event-label="'Product Click > ' + item.Title">
+                    <img class="img-responsive" ng-src="{{item.Thumbnail}}" />
+                    <p class="autocomplete-item__title">{{item.Title}}</p>
+                    <p class="autocomplete-item__price bold">£{{item.Price}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div ng-hide="loading || noSearchResults" class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-12">
+            <a class="btn btn--large" ng-href="{{searchUrl}}" ga-click-event event-category="'Search'" event-action="'See Full Search Results Button'" event-label="'Search Term: ' + searchTerm">See full search results</a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,18 @@
+﻿<div class="kiosk-hidden recently-viewed-container padded-desktop" ng-if="productIds && productIds.length">
+    <div class="product-list-title">
+        <h2 class="product-list-title__text">Recently Viewed</h2>
+    </div>
+    <div class="product-list recently-viewed">
+        <div ng-class="{'container':container}">
+            <div class="row">
+                <span ng-include="'/product/productboxcollection?'
+          + '&csswrapper=' + cssWrapper
+          + '&ids=' + productIds.join(',')
+          + '&listname=' + list
+          + '&startindex=0'">
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
