@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'adineue';
+    src: url('fonts/adineuePROCyr-Bold.eot');
+    src: local('☺'), url('fonts/adineuePROCyr-Bold.woff') format('woff'), url('fonts/adineuePROCyr-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'adineue';
+    src: url('fonts/adineuePROCyr-Regular.eot');
+    src: local('☺'), url('fonts/adineuePROCyr-Regular.woff') format('woff'), url('fonts/adineuePROCyr-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'adineue';
+    src: url('fonts/adineuePRO-BlackWeb.eot');
+    src: local('☺'), url('fonts/adineuePRO-BlackWeb.woff') format('woff'), url('fonts/adineuePRO-BlackWeb.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot');
+    src: local('☺'), url('fonts/icomoon.woff') format('woff'), url('fonts/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    line-height: 1.4;
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+    font-family: adineue, Arial;
+}
+
+.logo {
+    text-indent: -9999px;
+}
+
+.logo:after {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    content: '\e904';
+    font: 94px 'icomoon';
+    width: 140px;
+    height: 100px;
+    color: black;
+    text-indent: 0;
+    overflow: hidden;
+    margin: 0 0 0 -70px;
+}
+
+#ctl00_mainContentPlaceHolder_lblInvalidRequest {
+    display: block;
+    margin: 160px auto 0;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 25px;
+    max-width: 610px;
+    margin: 20px auto;
+}
+
+.columns {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    overflow: hidden;
+}
+
+.column {
+    float: left;
+    width: 44%;
+    margin: 0 3%
+}
+
+.contact {
+    clear: both;
+}
+
+.error {
+    color: #999;
+    margin: 60px 0 20px;
+    clear: both;
+    display: block;
+}
+
+/* Smaller then X */
+@media screen and (max-width: 420px) {
+    body {
+        font-size: 16px;
+    }
+
+    .logo:after {
+        font-size: 54px;
+        top: 40px;
+    }
+
+    .title {
+        max-width: 320px;
+        font-size: 32px;
+        margin-top: 120px;
+    }
+
+    .column {
+        float: none;
+        width: auto;
+    }
+}
