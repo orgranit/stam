@@ -6,6 +6,7 @@ const critical = require('critical');
 
 
 const main = async (siteName) => {
+    const domain = `https://${siteName.split('/')[0]}`
     const siteUrl = `https://${siteName}/`
 
 
@@ -26,12 +27,12 @@ const main = async (siteName) => {
     // setup a pipeline
     const pipeline = new InterceptionPipeline();
     pipeline.add({
-        patterns: [{ urlPattern: `${siteUrl}*` }],
+        patterns: [{ urlPattern: `${domain}*` }],
         async responseHandler({ response, request }) {
             const {url} = request
             const isRoot = url === siteUrl
             debugger
-            const file = isRoot ?  'index.html' : url.replace(siteUrl, '').split('?')[0]
+            const file = isRoot ?  'index.html' : url.replace(domain, '').split('?')[0]
             const body = await response.readBody()
             fse.outputFile(`${dirPath}/${file}`, body, function (err) {
                 if (err) {
@@ -112,4 +113,4 @@ const main = async (siteName) => {
     handleCORS(`${dirPath}/${target}`)
 }
 
-main('www.prezzybox.com')
+main('www.fossil.com/fr-fr')

@@ -1,0 +1,2478 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!--[if gt IE 9]><!-->
+<style>@charset "UTF-8";.mb-2{margin-bottom:1rem!important}.mb-4{margin-bottom:2rem!important}@font-face{font-family:FontAwesome;src:url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/fontawesome-webfont.eot?v=4.7.0);src:url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"),url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"),url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"),url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"),url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg");font-weight:400;font-style:normal}footer ul{list-style:none;padding-left:0}footer ul li{margin-bottom:.7rem}footer .content{font-size:.875em}footer .content li{height:1.875rem}@media (max-width:767.98px){.collapsible-sm .content{display:none}}@font-face{font-family:soleil;src:url(https://use.typekit.net/af/1f781f/00000000000000003b9aef83/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/1f781f/00000000000000003b9aef83/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/1f781f/00000000000000003b9aef83/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:soleil;src:url(https://use.typekit.net/af/2e4bb3/00000000000000003b9aef7e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/2e4bb3/00000000000000003b9aef7e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/2e4bb3/00000000000000003b9aef7e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-display:auto;font-style:normal;font-weight:400}@font-face{font-family:soleil;src:url(https://use.typekit.net/af/b3dc26/00000000000000003b9aef82/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/b3dc26/00000000000000003b9aef82/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/b3dc26/00000000000000003b9aef82/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-display:auto;font-style:italic;font-weight:700}@font-face{font-family:soleil;src:url(https://use.typekit.net/af/3b8a7f/00000000000000003b9aef7f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/3b8a7f/00000000000000003b9aef7f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/3b8a7f/00000000000000003b9aef7f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-display:auto;font-style:italic;font-weight:400}:root{--blue:#007bff;--indigo:#3b76ca;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#242424;--gray-dark:#242424;--trans:transparent;--black:#000;--primary:#242424;--secondary:#727272;--success:#419448;--info:#727272;--warning:#f8cc6b;--danger:#d22b20;--light:#ccc;--dark:#242424;--brand-main:#242424;--brand-second:#727272;--brand-light:#ccc;--brand-dark:#242424;--accent-1:#ff4610;--accent-2:#e64a19;--accent-3:#ff9f00;--accent-4:#00796a;--tertiary:#242424;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:1024px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}*,::after,::before{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%}header,nav{display:block}body{margin:0;font-family:Soleil,sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#242424;text-align:left;background-color:#fff}h2,h3{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}small{font-size:80%}a{color:#242424;text-decoration:none;background-color:transparent}img{vertical-align:middle;border-style:none}label{display:inline-block;margin-bottom:.5rem}button{border-radius:0}button,input{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button{text-transform:none}[type=button],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}[type=search]{outline-offset:-2px;-webkit-appearance:none}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}.h5,h2,h3{margin-bottom:.5rem;font-weight:500;line-height:1.2}h2{font-size:1.25rem}h3{font-size:1.125rem}.h5{font-size:.875rem}small{font-size:80%;font-weight:400}.container{width:100%;padding-right:10px;padding-left:10px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:760px}}@media (min-width:1024px){.container{max-width:1014px}}@media (min-width:1200px){.container{max-width:1290px}}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-10px;margin-left:-10px}.col,.col-12,.col-lg-2,.col-lg-5{position:relative;width:100%;padding-right:10px;padding-left:10px}.col{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}@media (min-width:1024px){.col-lg-2{-ms-flex:0 0 16.66667%;flex:0 0 16.66667%;max-width:16.66667%}.col-lg-5{-ms-flex:0 0 41.66667%;flex:0 0 41.66667%;max-width:41.66667%}}.form-control{display:block;width:100%;height:55px;padding:.875rem;font-size:1rem;font-weight:400;line-height:1.5;color:#242424;background-color:#fff;background-clip:padding-box;border:1px solid #ccc;border-radius:0;box-shadow:none}.form-control::-ms-expand{background-color:transparent;border:0}.form-control:-ms-input-placeholder{color:#727272;opacity:1}.invalid-feedback{display:none;width:100%;margin-top:.25rem;font-size:80%;color:#d22b20}.btn{display:inline-block;font-weight:400;color:#242424;text-align:center;vertical-align:middle;background-color:transparent;border:2px solid transparent;padding:.75rem 1rem;font-size:.875rem;line-height:1.75;border-radius:0}.btn-primary{color:#fff;background-color:#242424;border-color:#242424;box-shadow:0 0 0 transparent}.collapse:not(.show){display:none}.dropdown{position:relative}.dropdown-toggle{white-space:nowrap}.dropdown-toggle::after{display:inline-block;margin-left:.255em;vertical-align:.255em;content:"";border-top:.3em solid;border-right:.3em solid transparent;border-bottom:0;border-left:.3em solid transparent}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:10rem;padding:.5rem 0;margin:.125rem 0 0;font-size:1rem;color:#242424;text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.15);border-radius:.25rem;box-shadow:0 .5rem 1rem rgba(0,0,0,.175)}.dropdown-item{display:block;width:100%;padding:.25rem 1.5rem;clear:both;font-weight:400;color:#242424;text-align:inherit;white-space:nowrap;background-color:transparent;border:0}.nav{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}.nav-link{display:block;padding:.5rem 1rem}.navbar{position:relative;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;padding:.5rem 1rem}.navbar-nav{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-nav .dropdown-menu{position:static;float:none}.navbar-toggler{padding:.25rem .75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:0}@media (min-width:1024px){.navbar-expand-lg{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-lg .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-lg .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-lg .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}}.card-body{-ms-flex:1 1 auto;flex:1 1 auto;padding:1.25rem}.card-img-overlay{position:absolute;top:0;right:0;bottom:0;left:0;padding:1.25rem}.card-img{width:100%;border-radius:0}.close{float:right;font-size:1.5rem;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.5}button.close{padding:0;background-color:transparent;border:0;-webkit-appearance:none;-moz-appearance:none;appearance:none}.popover{position:absolute;top:0;left:0;z-index:1060;display:block;max-width:276px;font-family:Soleil,sans-serif;font-style:normal;font-weight:400;line-height:1.5;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;white-space:normal;line-break:auto;font-size:.875rem;word-wrap:break-word;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.2);border-radius:.3rem;box-shadow:0 .25rem .5rem rgba(0,0,0,.2)}.carousel{position:relative}.carousel-inner{position:relative;width:100%;overflow:hidden}.carousel-inner::after{display:block;clear:both;content:""}.carousel-item{position:relative;display:none;float:left;width:100%;margin-right:-100%;-webkit-backface-visibility:hidden;backface-visibility:hidden}.carousel-item.active{display:block}.rounded-pill{border-radius:50rem!important}.clearfix::after{display:block;clear:both;content:""}.d-none{display:none!important}.d-inline{display:inline!important}.d-block{display:block!important}.d-flex{display:-ms-flexbox!important;display:flex!important}@media (min-width:576px){.d-sm-block{display:block!important}}@media (min-width:768px){.d-md-none{display:none!important}.d-md-inline{display:inline!important}.d-md-inline-block{display:inline-block!important}.d-md-block{display:block!important}}@media (min-width:1024px){.d-lg-none{display:none!important}.d-lg-inline{display:inline!important}}.flex-column{-ms-flex-direction:column!important;flex-direction:column!important}.flex-column-reverse{-ms-flex-direction:column-reverse!important;flex-direction:column-reverse!important}.justify-content-center{-ms-flex-pack:center!important;justify-content:center!important}.align-items-center{-ms-flex-align:center!important;align-items:center!important}.position-relative{position:relative!important}.w-100{width:100%!important}.h-100{height:100%!important}.mb-0{margin-bottom:0!important}.ml-0{margin-left:0!important}.ml-2{margin-left:1rem!important}.mt-5{margin-top:2.5rem!important}.mb-5{margin-bottom:2.5rem!important}.p-0{padding:0!important}.pr-0,.px-0{padding-right:0!important}.pl-0,.px-0{padding-left:0!important}.pb-1{padding-bottom:.5rem!important}.pt-2,.py-2{padding-top:1rem!important}.py-2{padding-bottom:1rem!important}.py-3{padding-top:1.5rem!important}.py-3{padding-bottom:1.5rem!important}.mr-n5{margin-right:-2.5rem!important}.ml-n5{margin-left:-2.5rem!important}.mx-auto{margin-right:auto!important}.ml-auto,.mx-auto{margin-left:auto!important}.text-center{text-align:center!important}@media (min-width:768px){.flex-md-row{-ms-flex-direction:row!important;flex-direction:row!important}.justify-content-md-center{-ms-flex-pack:center!important;justify-content:center!important}.mt-md-0{margin-top:0!important}.mr-md-0{margin-right:0!important}.ml-md-0{margin-left:0!important}.mt-md-2{margin-top:1rem!important}.mx-md-5{margin-right:2.5rem!important}.mx-md-5{margin-left:2.5rem!important}.p-md-0{padding:0!important}.py-md-0{padding-top:0!important}.pb-md-0,.py-md-0{padding-bottom:0!important}.text-md-center{text-align:center!important}}.font-weight-bold{font-weight:700!important}.text-white{color:#fff!important}.btn{height:auto;min-height:55px;letter-spacing:.3px;padding:0 40px;text-transform:uppercase;line-height:1.75;overflow-wrap:break-word}a.btn{padding:.75rem 40px}.btn-primary{background-color:#242424;border-color:#242424;color:#fff;font-size:1rem}.form-control{font-size:.875rem;height:55px}@media (max-width:767.98px){.form-control{font-size:16px}}html{font-size:1rem}body{font-size:.875rem}form{font-size:.875rem}label{font-weight:400}#accordion .card .card-body{padding:1rem;margin-left:50px}#accordion .card .card-body p:last-of-type{margin-bottom:0}.nav-link{margin-right:1rem}@media (max-width:1023.98px){.hidden-md-down{display:none!important}}.fa{display:inline-block;font:14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.pull-right{float:right}.pull-left{float:left}.fa-arrow-up:before{content:"\F062"}.flag-icon{background-size:contain;background-position:50%;background-repeat:no-repeat}.flag-icon{position:relative;display:inline-block;width:1.33333em;line-height:1em}.flag-icon:before{content:'\A0'}.flag-icon-au{background-image:url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/flags/4x3/au.svg)}.flag-icon-ca{background-image:url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/flags/4x3/ca.svg)}.flag-icon-de{background-image:url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/flags/4x3/de.svg)}.flag-icon-fr{background-image:url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/flags/4x3/fr.svg)}.flag-icon-gb{background-image:url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/flags/4x3/gb.svg)}.flag-icon-in{background-image:url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/flags/4x3/in.svg)}.flag-icon-it{background-image:url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/flags/4x3/it.svg)}.flag-icon-jp{background-image:url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/flags/4x3/jp.svg)}.flag-icon-us{background-image:url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/fonts/flags/4x3/us.svg)}@media (min-width:768px){.multilevel-dropdown .dropdown-item+.dropdown-item{border:none}}.menu-list{padding-left:0}.navbar.bg-inverse{background-color:transparent!important;padding:0;left:0;display:block}@media (min-width:1024px){.navbar.bg-inverse{padding:0;position:relative;left:-40px}}.dropdown-toggle::after{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;content:''}.back{border:0;background:0 0}.back img{vertical-align:-3px;width:9px;left:-3px;position:relative}@media (min-width:1024px){body{overflow-x:unset}.navbar-nav .nav-item{position:static;padding:0}.navbar-nav .nav-item+.nav-item{margin-left:0}.navbar-nav .nav-item .nav-link{border:0;border-bottom:5px solid transparent;color:#242424;font-size:.875rem;font-weight:700;letter-spacing:.5px;text-decoration:none;text-transform:uppercase;padding:0;white-space:nowrap}.navbar-nav .nav-item .dropdown-menu{border:none;box-shadow:none}.navbar-nav .nav-item .dropdown-menu .menu-list .dropdown-link{color:#242424;font-size:.875rem;font-weight:400;text-align:left}.navbar-nav .nav-item .dropdown-menu .menu-list .dropdown-item{padding:.425em 0}.navbar-nav .nav-item .dropdown-menu .menu-list .dropdown-item+.dropdown-item{border-top:none}.navbar-nav .nav-item .dropdown-menu>.menu-list{display:-ms-flexbox;display:flex;-ms-flex-line-pack:distribute;align-content:space-around;margin:25px auto 3rem}.navbar-nav .nav-item .dropdown-menu>.menu-list>.dropdown-item{padding:0 40px}.navbar-nav .nav-item .dropdown-menu>.menu-list>.dropdown-item:first-of-type{padding-left:0}.navbar-nav .nav-item .dropdown-menu>.menu-list>.dropdown-item:not(:last-child){border-right:1px solid #ccc}.navbar-nav .nav-item .dropdown-menu>.menu-list>.dropdown-item.last{padding-right:0;border-right:0}.navbar-nav .nav-item .dropdown-menu>.menu-list>.dropdown-item>.dropdown-link{border-bottom:5px solid transparent;color:#242424;font-size:.875rem;font-weight:700;letter-spacing:.4px;text-decoration:none;text-transform:uppercase}.navbar-nav>.nav-item.dropdown[role=menuitem]:first-of-type{padding-left:0}.navbar-nav>.nav-item.dropdown[role=menuitem].last{padding-right:0}.navbar-nav>.nav-item.dropdown[role=menuitem] .level-2{position:relative;z-index:900;-ms-flex:0 1 auto;flex:0 1 auto}.navbar-nav>.nav-item>.nav-link{padding-bottom:6px}.country-selector .arrow-down{position:relative;top:-2px}.main-menu.menu-toggleable-left .close-menu{display:none}}.main-menu.menu-toggleable-left .close-menu{-ms-flex:0 0 100%;flex:0 0 100%;padding:15px;background-color:#fff;border-bottom:1px solid #ccc}.main-menu.menu-toggleable-left .menu-group{-ms-flex:0 0 100%;flex:0 0 100%}@media (min-width:576px){.main-menu.menu-toggleable-left .bg-inverse{background-color:#fff!important;color:#faf8f6}}@media (max-width:1023.98px){.main-menu.menu-toggleable-left{background-color:#fff;height:100%;overflow-x:hidden;overflow-y:scroll;z-index:1000;width:auto}.main-menu.menu-toggleable-left{position:fixed;z-index:999;right:-100%;top:0;bottom:0;display:block}.multilevel-dropdown .dropdown .level-2 .dropdown-item,.multilevel-dropdown .dropdown .level-3 .dropdown-item{max-height:0}}.multilevel-dropdown .dropdown-menu{top:90%;border:0;border-radius:0}.multilevel-dropdown .dropdown-menu>.menu-list>.dropdown-item>.dropdown-link{font-weight:700}.multilevel-dropdown .navbar>.close-menu>.back{display:none}.multilevel-dropdown .dropdown-item{padding:0 0 0 1em}.multilevel-dropdown .dropdown-item .dropdown-link{display:block}.multilevel-dropdown .dropdown-item+.dropdown-item{border-top:1px solid #fff}#fix-wrapper{position:fixed;background-color:#fff;width:100%;top:0;left:0;right:0;z-index:1042}#main-content{margin-top:111px}a.skip-nav{color:#fff;position:absolute;top:-9999px;left:-9999px}.header{position:static;height:32px}.header.container{max-width:100%}.country-selector .btn{height:auto;min-height:auto;margin-top:-5px;padding:0;text-transform:none;position:static}.brand{position:relative;left:10px;display:block}.brand img{width:100%}@media (min-width:1024px){.brand{margin-top:-5px;padding:0;width:6.25em;min-width:100px;z-index:50}}@media (max-width:1023.98px){.multilevel-dropdown .country-selector .locale-group{max-height:0}.header.container{border-bottom:1px solid #ccc}.brand{margin-top:-4px;padding:0;width:5em;min-width:80px}}.main-menu{background-color:transparent}@media (min-width:1024px){.main-menu{margin:0 auto}.header-banner{height:auto}}.header-banner{background-color:#fff;color:#242424;font-size:.875rem;margin-bottom:13px;padding-top:8px;padding-bottom:8px;text-align:left}@media (max-width:767.98px){.header-banner{min-height:35px;height:auto}}.header-banner .container{max-width:100%}.header-banner .content{margin-right:1.5em;padding-top:.3125em;padding-bottom:.3125em}.header-banner .user{float:left;margin:2px 20px 0 0;position:relative}.header-banner .user.country-selector{margin-top:2px}.header-banner .user .dropdown-toggle{text-transform:none;background:0 0;border:none;padding:0;margin:0;width:auto;height:auto;min-height:auto}.header-banner .user .dropdown-toggle::after{background:url(on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/images/svg-icons/arrow-down.svg);width:9px;height:6px;position:relative;left:3px;border:none}.mobile-utility{position:relative;top:-10px}.minicart{margin-top:0;vertical-align:top;width:20px}@media (max-width:1023.98px){.minicart{margin-top:3px;margin-right:10px}}.minicart .minicart-quantity{line-height:normal;display:inline-block;text-align:center;font-size:.688em;position:absolute;top:9px;left:1px;color:#242424;width:16px}.minicart .cart-items-indicator{background:#ff4610;height:9px;width:9px;border-radius:50%;display:inline-block;position:absolute;top:2px;left:11px}.slide-up{max-height:100px;overflow:hidden}.fixed-brand-link{display:block;margin-top:-70px;text-align:center}.navbar-fixed-toggler{display:none;position:absolute;background:0 0;border:none;top:9px;left:-50px}.fix-header-customer{display:none}.header-icon-links{display:inline-block}footer form input{border:none;border-bottom:1px solid #000;border-radius:0;max-width:320px;width:100%}footer .back-to-top{position:fixed;right:1vw;bottom:1vw;background-color:#fff;border-radius:50%;float:left;margin:.313em;margin-top:.1875em;border-color:transparent;box-shadow:0 2px 10px rgba(0,0,0,.2);padding:.125em .375em .1875em;z-index:100}footer .back-to-top i{font-size:1.5em;height:2rem;width:1.6rem;padding-top:.275em}.h5,h2,h3{font-weight:600!important}.minicart{position:relative}.minicart .popover{top:35px;left:auto;right:-10px;min-width:23.44rem;max-width:23.44rem;min-height:6.25rem;z-index:900;display:none}.minicart .popover::before{left:auto;right:15px}.minicart .popover::after{left:auto;right:16px}@media (min-width:576px) and (max-width:767.98px){.hide-link-med{display:none}}@media (max-width:575.98px){.hide-no-link{display:none}}.card-container{position:relative}.site-search{background:#fff;border-bottom:1px solid #ccc;display:none;height:60px;position:absolute;margin:0 auto;right:0;left:0;top:0;width:100%;z-index:20}@media (min-width:1024px){.header-banner .header-top-links{padding-right:15px}.site-search{border:none;height:42px;padding-top:0;top:42px}}@media (min-width:768px) and (max-width:1023.98px){.site-search{height:83px;padding-top:42px}}@media (max-width:767.98px){.site-search{height:68px;padding-top:24px}}.site-search form{margin:0 auto;position:relative;width:70%}.site-search .submit-search{height:30px;min-height:30px;position:absolute;right:5px;top:5px;width:auto;padding:0 10px}.site-search input{height:40px}.site-search .close-search-button{left:86%;position:relative;top:-28px;background:0 0;border:none;padding:0;margin:0;width:auto;height:auto;min-height:auto}.search-button{position:relative;top:-35px;background:0 0;border:none;padding:0;margin:0;width:auto;height:auto;min-height:auto}@media (max-width:1023.98px){footer form input{max-width:375px}.site-search form{width:calc(100% - 10px)}.site-search input{border:none}.site-search .close-search-button{left:calc(100% - 90px)}.search-button{top:5px;right:25px}}.search-button img{width:15px}@media (max-width:1023.98px){.search-button img{width:20px}}.suggestions-wrapper{position:relative}input:-internal-autofill-previewed,input:-internal-autofill-selected{-webkit-box-shadow:0 0 0 30px #fff inset!important}*{letter-spacing:.25px}.visually-hidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}li,p{font-size:.875rem}.modal-background{background-color:#000;display:none;height:100%;position:fixed;opacity:.5;width:100%;top:0;left:0}.close{opacity:1!important}input[placeholder]{text-overflow:ellipsis}.error-messaging{position:fixed;top:0;width:100%;z-index:1}@media (min-width:768px){.hide-no-link{display:none}.container{padding-right:15px;padding-left:15px}}.container{max-width:100%}@media (min-width:1024px){.container{max-width:1290px}}</style>
+	<script>//common/scripts.isml</script>
+<script defer="" type="text/javascript" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/js/main.js"></script>
+<script defer="" type="text/javascript" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/lib/jquery.zoom.min.js"></script>
+<script defer="" type="text/javascript" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/js/productTile.js"></script>
+<!--<![endif]-->
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fossil - Le site Officiel Fossil Montres, Maroquinerie, Bijoux et Acessoires</title>
+<meta name="description" content="Les dernières nouveautés et tendances Fossil : montres, portefeuilles, sacs et accessoires. Livraison gratuite dès 70€ d'achat sur fossil.fr.">
+<meta name="keywords" content="">
+<link rel="icon" type="image/png" href="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw2866c084/images/favicons/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw7f74cbae/images/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dwc4c22261/images/favicons/favicon-58x58.png" sizes="58x58">
+<link rel="icon" type="image/png" href="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dwf47ac547/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw270048ce/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw7020edd0/images/favicons/favicon-128.png" sizes="128x128">
+<link rel="apple-touch-icon" type="image/png" href="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dwed2aa579/images/favicons/apple-touch-favicon-58x58.png" sizes="58x58">
+<link rel="stylesheet" href="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/css/global.css" media="print" onload="this.media='all'">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq2808-jQbALqkM229fhaYSz1l3zGIqB4&amp;libraries=places&amp;language=fr&amp;region=FR"></script>
+<script>
+    var CRL8_SITENAME = "fossil-4bz6bi";
+    !function(){var e=window.crl8=window.crl8||{},n=!1,i=[];e.ready=function(e){n?e():i.push(e)},e.pixel=e.pixel||function(){e.pixel.q.push(arguments)},e.pixel.q=e.pixel.q||[];var t=window.document,o=t.createElement("script"),c=e.debug||-1!==t.location.search.indexOf("crl8-debug=true")?"js":"min.js";o.src=t.location.protocol+"//cdn.curalate.com/sites/"+CRL8_SITENAME+"/site/latest/site."+c,o.onload=function(){n=!0,i.forEach(function(e){e()})};var r=t.getElementsByTagName("script")[0];r.parentNode.insertBefore(o,r.nextSibling)}();
+</script>
+<link rel="canonical" href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/">
+<link rel="alternate" href="https://www.fossil.com/en-us/" hreflang="x-default">
+<link rel="alternate" href="https://www.fossil.com/en-us/" hreflang="en-us">
+<link rel="alternate" href="https://www.fossil.com/en-ca/" hreflang="en-ca">
+<link rel="alternate" href="https://www.fossil.com/fr-ca/" hreflang="fr-ca">
+<link rel="alternate" href="https://www.fossil.com/en-gb/" hreflang="en-gb">
+<link rel="alternate" href="https://www.fossil.com/de-de/" hreflang="de-de">
+<link rel="alternate" href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/" hreflang="fr-fr">
+<link rel="alternate" href="https://www.fossil.com/it-it/" hreflang="it-it">
+<link rel="alternate" href="https://www.fossil.com/ja-jp/" hreflang="ja-jp">
+<link rel="alternate" href="https://www.fossil.com/ko-kr/" hreflang="x-default">
+<link rel="alternate" href="https://www.fossil.com/en-au/" hreflang="en-au">
+<link rel="alternate" href="https://www.fossil.com/en-in/" hreflang="en-in">
+<script>
+    var _etmc = [];
+    var s7jsonResponse;
+</script>
+<link rel="stylesheet" href="https://use.typekit.net/akt1zlq.css" media="print" onload="this.media='all'">
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _searchData: "",
+    _anact: "",
+    _anact_nohit_tag: "",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() { 
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+        	dw.ac._searchData = context.searchData;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    }
+};
+/* ]]> */
+// -->
+</script><script type="text/javascript">//<!--
+/* <![CDATA[ (head-cquotient.js) */
+var CQuotient = window.CQuotient = {};
+CQuotient.clientId = 'bcmd-fossil-fr';
+CQuotient.realm = 'BCMD';
+CQuotient.siteId = 'fossil-fr';
+CQuotient.instanceType = 'prd';
+CQuotient.locale = 'fr_FR';
+CQuotient.activities = [];
+CQuotient.cqcid='';
+CQuotient.cquid='';
+CQuotient.cqeid='';
+CQuotient.cqlid='';
+CQuotient.initFromCookies = function () {
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+	  var c = ca[i];
+	  while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	  if (c.indexOf('cqcid=') == 0) {
+		CQuotient.cqcid=c.substring('cqcid='.length,c.length);
+	  } else if (c.indexOf('cquid=') == 0) {
+		  var value = c.substring('cquid='.length,c.length);
+		  if (value) {
+		  	var split_value = value.split("|", 3);
+		  	if (split_value.length > 0) {
+			  CQuotient.cquid=split_value[0];
+		  	}
+		  	if (split_value.length > 1) {
+			  CQuotient.cqeid=split_value[1];
+		  	}
+		  	if (split_value.length > 2) {
+			  CQuotient.cqlid=split_value[2];
+		  	}
+		  }
+	  }
+	}
+}
+CQuotient.getCQCookieId = function () {
+	if(window.CQuotient.cqcid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqcid;
+};
+CQuotient.getCQUserId = function () {
+	if(window.CQuotient.cquid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cquid;
+};
+CQuotient.getCQHashedEmail = function () {
+	if(window.CQuotient.cqeid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqeid;
+};
+CQuotient.getCQHashedLogin = function () {
+	if(window.CQuotient.cqlid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqlid;
+};
+CQuotient.trackEventsFromAC = function (/* Object or Array */ events) {
+try {
+	if (Object.prototype.toString.call(events) === "[object Array]") {
+		events.forEach(_trackASingleCQEvent);
+	} else {
+		CQuotient._trackASingleCQEvent(events);
+	}
+} catch(err) {}
+};
+CQuotient._trackASingleCQEvent = function ( /* Object */ event) {
+	if (event && event.id) {
+		if (event.type === dw.ac.EV_PRD_DETAIL) {
+			CQuotient.trackViewProduct( {id:'', alt_id: event.id, type: 'raw_sku'} );
+		} // not handling the other dw.ac.* events currently
+	}
+};
+CQuotient.trackViewProduct = function(/* Object */ cqParamData){
+	var cq_params = {};
+	cq_params.cookieId = CQuotient.getCQCookieId();
+	cq_params.userId = CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.product = cqParamData.product;
+	cq_params.realm = cqParamData.realm;
+	cq_params.siteId = cqParamData.siteId;
+	cq_params.instanceType = cqParamData.instanceType;
+	cq_params.locale = CQuotient.locale;
+	
+	if(CQuotient.sendActivity) {
+		CQuotient.sendActivity(CQuotient.clientId, 'viewProduct', cq_params);
+	} else {
+		CQuotient.activities.push({activityType: 'viewProduct', parameters: cq_params});
+	}
+};
+/* ]]> */
+// -->
+</script>
+<script>
+dataLayer = [{"site":{"isProduction":"true","brand":"Fossil"},"visitor":{"customerID":"acsVi7EmqaBqSaJcgUldPiAEtp","state":"anonymous"}},{"page":{"type":"home"}}];
+</script>
+<script>
+dataLayer = dataLayer.concat({"loggedInState":false,"pageLanguage":"fr_FR"});
+</script>
+
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WSDDB4T');
+</script>
+
+
+  <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"true","rua.cpush":"true","rua.upre":"true","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-ab970211-1086-4869-aa4a-9ac467ebdf17","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false"}]);</script>
+                          <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("True"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="BRFTV-LYTG5-2FNME-L2QZT-MWVPF",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(c){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"BRFTV-LYTG5-2FNME-L2QZT-MWVPF";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n="true"=="true"?1:0,t="",a="3gcpdic4pigp4ybrin3a-f-d63506f79-clientnsv4-s.akamaihd.net",i={"ak.v":"30","ak.cp":"388756","ak.ai":parseInt("221915",10),"ak.ol":"0","ak.cr":14,"ak.ipv":4,"ak.proto":"h2","ak.rid":"f85bfb9","ak.r":8117,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"217.132.241.0","ak.cport":49627,"ak.gh":"104.115.80.23","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1613841270","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==FuqhCmAFTG2671A9pJFj+U528+o7X0fgpiZ+ZhY7uZYDbMtQkjkmnTlDBi/Cy7pbknLabC5VKu45ABp0a5/Vraag5XxC1OIUa6ZtReEvGz8/9qk16sXbfxgaZB22kjWzVNmbN2YN3M7YNk4JG3pVhNORxdik2fTDthOCyQ9hzltPL7TIOMOIqnG2JWg8Ni1B2nE5QK9vBKkgsweMi/xNMAOjza++qlEaAlQYuAF5VLrGNgNiMZLG5flWDm55gmuEtucoWQkBC5S2P6GG99SXlsSbDxu/UFoVgVWXHy6xwC8IGX7yQKw2aySusPqeBIDph+6i9cpV+fIcqnTULTihCrqODCz7I4G4UzC0C9xtS8OZLk/DDMM1DeWlMLlCsnRI3rz0B6fauLpQye1WVvNMKjoVgg97f64jX/BxptruU0Y=","ak.pv":"242","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!o.i){var e=BOOMR.subscribe;e("before_beacon",o.av,null,null),e("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body class="">
+
+<noscript>
+<iframe src="/stam/sites/www.fossil.com/fr-fr//www.googletagmanager.com/ns.html?id=GTM-WSDDB4T" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<div class="page" data-action="Home-Show" data-querystring="">
+<a href="#main-content" class="skip-nav">Passer au contenu principal</a>
+<div id="fix-wrapper">
+<div class="header-banner">
+<div class="container">
+<div class="row">
+<div class="col-lg-5 pull-left">
+<div class="content slide-up">
+<style>
+    #utility {
+        background-color: #ffffff;
+    }
+</style>
+<div class="carousel slide" data-ride="carousel" data-interval="4000">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/email-signup.html"><u>INSCRIVEZ-VOUS MAINTENANT ET PROFITEZ DE 15 % DE REMISE*</u></a>
+</div>
+<div class="carousel-item">
+<p class="d-none d-md-inline">LIVRAISON ET RETOUR GRATUITS POUR TOUTES LES COMMANDES</p>
+<p class="d-inline d-md-none">LIVRAISON ET RETOUR GRATUITS</p>
+</div>
+<div class="carousel-item">
+
+<p class="d-inline">CLICK & COLLECT - <a href="https://support.fossil.com/hc/fr/articles/360050883833-Service-Click-Collect-" target="_blank"><u>PLUS D'INFOS</u></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed-brand col-lg-2 d-none d-sm-block">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/" class="fixed-brand-link" />
+<img class="icon logo-xl " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dwd52ef5ae/images/svg-icons/logo-xl.svg" alt="" width=" " height=" " />
+<span class="visually-hidden">
+Fossil Accueil
+</span>
+</a>
+</div>
+<div class="header-top-links navbar-header col-lg-5 hidden-md-down">
+<div class="pull-right">
+<div class="">
+<div class="user hidden-md-down d-inline dropdown country-selector" data-url="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/Page-SetLocale" data-current-locale="fr_FR" data-current-currency="EUR" tabindex="0">
+<span class="dropdown-toggle" id="dropdownCountrySelector" aria-labelledby="dropdownCountryTitle dropdownCountryDesc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ Adresse d&rsquo;exp&eacute;dition
+<span class="visually-hidden" id="dropdownCountryTitle">Country Selection:</span>
+<span class="visually-hidden" id="dropdownCountryDesc">fran&ccedil;ais (France)</span>
+<i class="flag-icon flag-icon-fr" aria-hidden="true"></i>
+</span>
+<div class="dropdown-menu dropdown-country-selector" aria-labelledby="dropdownCountrySelector" data-confirm-change-url="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/Page-ConfirmLocaleDialog">
+<button class="close-dropdown" aria-label="Close" role="button">
+<img class="icon close-circle " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw2c6633b8/images/svg-icons/close-circle.svg" alt="" width=" " height=" " />
+</button>
+<div class="locale-group col">
+<div class="h5" tabindex="-1">North America</div>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/en-us/" data-locale="en_US" data-currencyCode="USD" tabindex="0">
+<i class="flag-icon flag-icon-us"></i>
+&Eacute;tats-Unis | EN
+</a>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/en-ca/" data-locale="en_CA" data-currencyCode="CAD" tabindex="0">
+<i class="flag-icon flag-icon-ca"></i>
+Canada | EN
+</a>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/fr-ca/" data-locale="fr_CA" data-currencyCode="CAD" tabindex="0">
+<i class="flag-icon flag-icon-ca"></i>
+Canada | FR
+</a>
+</div>
+<div class="locale-group col">
+<div class="h5" tabindex="-1">Europe</div>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/en-gb/" data-locale="en_GB" data-currencyCode="GBP" tabindex="0">
+<i class="flag-icon flag-icon-gb"></i>
+Royaume Uni | EN
+</a>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/de-de/" data-locale="de_DE" data-currencyCode="EUR" tabindex="0">
+<i class="flag-icon flag-icon-de"></i>
+Allemagne / Autriche | DE
+</a>
+<a class="dropdown-item" href="#" data-siteurl="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/Page-SetLocale" data-locale="fr_FR" data-currencyCode="EUR" tabindex="0">
+<i class="flag-icon flag-icon-fr"></i>
+France | FR
+</a>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/it-it/" data-locale="it_IT" data-currencyCode="EUR" tabindex="0">
+<i class="flag-icon flag-icon-it"></i>
+Italie | IT
+</a>
+</div>
+<div class="locale-group col">
+<div class="h5" tabindex="-1">Asia Pacific</div>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/ja-jp/" data-locale="ja_JP" data-currencyCode="JPY" tabindex="0">
+<i class="flag-icon flag-icon-jp"></i>
+Japon | JA
+</a>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/en-au/" data-locale="en_AU" data-currencyCode="AUD" tabindex="0">
+<i class="flag-icon flag-icon-au"></i>
+Australie | EN
+</a>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/en-in/" data-locale="en_IN" data-currencyCode="INR" tabindex="0">
+<i class="flag-icon flag-icon-in"></i>
+Inde | EN
+</a>
+</div>
+</div>
+</div>
+<div class="header-icon-links">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/account/" class="fix-header-customer">
+<img class="icon customer " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw5cd63ecb/images/svg-icons/customer.svg" alt="" width=" " height=" " />
+<span class="visually-hidden">
+Fossil Accueil
+</span>
+</a>
+<div class="fix-header-dropdown">
+<div class="user hidden-md-down d-inline">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/orders/">
+<span class="user-message">Statut de commande</span>
+</a>
+</div>
+<div class="user hidden-md-down d-inline">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/login/">
+<span class="user-message">Se connecter</span>
+</a>
+</div>
+</div>
+</div>
+<div class="minicart d-none d-lg-inline pull-right" data-action-url="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/Cart-MiniCartShow">
+<div class="minicart-total hide-link-med">
+<a class="minicart-link" href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/cart/" title="Afficher le panier" />
+<img class="icon bag-empty " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw075c9baf/images/svg-icons/bag-empty.svg" alt="" width=" " height=" " />
+<div class="cart-items-indicator"></div>
+<span class="visually-hidden">Number of items in your shopping bag </span>
+<span class="minicart-quantity">
+0
+</span>
+</a>
+</div>
+<div class="minicart-total hide-no-link">
+<img class="icon bag-empty " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw075c9baf/images/svg-icons/bag-empty.svg" alt="" width=" " height=" " />
+<div class="cart-items-indicator"></div>
+<span class="visually-hidden">Number of items in your shopping bag </span>
+<span class="minicart-quantity">
+0
+</span>
+</div>
+<div class="popover popover-bottom"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row hidden-md-down">
+</div>
+
+</div>
+</div>
+<header role="banner">
+<div class="header container">
+<div class="row">
+<div>
+<div class="navbar-header brand">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/" />
+<img class="icon logo-xl " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dwd52ef5ae/images/svg-icons/logo-xl.svg" alt="" width=" " height=" " />
+<span class="visually-hidden">
+Fossil Accueil
+</span>
+</a>
+</div>
+</div>
+<button class="navbar-fixed-toggler" type="button" aria-controls="sg-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+<img class="icon menu " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dwe14331c9/images/svg-icons/menu.svg" alt="" width=" " height=" " />
+<span class="visually-hidden">Menu</span>
+</button>
+<div class="ml-auto main-menu navbar-toggleable-md menu-toggleable-left multilevel-dropdown" id="sg-navbar-collapse">
+<nav class="navbar navbar-expand-lg bg-inverse col-12">
+<div class="close-menu clearfix d-lg-none">
+<div class="back pull-left">
+<button type="button" class="back" data-dismiss="modal" aria-label="Back">
+<span aria-hidden="true">
+<img class="icon left-carousel-arrow " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw8964d09d/images/svg-icons/left-carousel-arrow.svg" alt="" width=" " height=" " />
+Retour
+</span>
+</button>
+</div>
+<div class="close-button pull-right">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span class="visually-hidden">Fermer</span>
+<span aria-hidden="true">
+<img class="icon close " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw67aa3341/images/svg-icons/close.svg" alt="" width=" " height=" " />
+</span>
+</button>
+</div>
+</div>
+<div class="menu-group" aria-label="Main menu" role="navigation">
+<ul class="nav navbar-nav" role="menu">
+<li class="nav-item dropdown" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/femmes/" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Femmes
+<img class="icon right-carousel-arrow pull-right d-lg-none" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw8a3873b6/images/svg-icons/right-carousel-arrow.svg" alt="" width=" " height=" " />
+</a>
+<ul class="dropdown-menu" role="menu" aria-hidden="true">
+<ul class="menu-list level-2">
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/" role="button" class="dropdown-link">
+<span>Montres</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/femmes/montres/" role="button" class="dropdown-link">Nouveaut&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/montres-connectees/" role="button" class="dropdown-link">Montres connect&eacute;es</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/montres-connectees-hybrides/" role="button" class="dropdown-link">Montres connect&eacute;es hybrides</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/montres-boyfriend/" role="button" class="dropdown-link">Montres boyfriend</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/montres-en-cuir/" role="button" class="dropdown-link">Montres en cuir</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/montres-dore-rose/" role="button" class="dropdown-link">Montres dor&eacute; rose</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/montres-en-acier-inoxydable/" role="button" class="dropdown-link">Montres en acier inoxydable</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/bracelets-de-montres/" role="button" class="dropdown-link">Bracelets de Montres</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-a-main-pour-femme/" role="button" class="dropdown-link">
+<span>Sacs &agrave; main</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-a-main-pour-femme/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/femmes/sacs/" role="button" class="dropdown-link">Nouveaut&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-a-main-pour-femme/sacs-porte-croise/" role="button" class="dropdown-link">Sacs port&eacute; crois&eacute;</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-a-main-pour-femme/sacs-double-porte-et-sacs-porte-epaule/" role="button" class="dropdown-link">Sacs double port&eacute; et sacs port&eacute; &eacute;paule</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-a-main-pour-femme/cabas/" role="button" class="dropdown-link">Cabas</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-a-main-pour-femme/sacs-a-dos/" role="button" class="dropdown-link">Sacs &agrave; dos</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-a-main-pour-femme/porte-documents/" role="button" class="dropdown-link">Porte-documents</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-femme/" role="button" class="dropdown-link">
+<span>Porte-monnaie</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-femme/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/femmes/porte-monnaie/" role="button" class="dropdown-link">Nouveaut&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-femme/pochettes-pour-telephone/" role="button" class="dropdown-link">Pochettes pour t&eacute;l&eacute;phone</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-femme/portefeuilles-rfid/" role="button" class="dropdown-link">Portefeuilles RFID</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-femme/pochettes/" role="button" class="dropdown-link">Pochettes</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-femme/porte-monnaie-zippes/" role="button" class="dropdown-link">Porte-monnaie zipp&eacute;s</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item content-asset">
+<div class="content-asset">
+<div class="d-flex flex-column flex-md-row">
+
+<div class="nav-content-asset-col pr-0 d-none d-md-inline-block"></div>
+<div class="nav-content-asset-col p-0 w-xs-100">
+
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/bijoux/bijoux-femme/" role="button" class="dropdown-link custom-asset-link-md py-2 py-md-0 border-bottom-sm"> <span>Bijoux</span> </a>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/accessoires/masques-en-tissu/" role="button" class="dropdown-link custom-asset-link-md py-2 py-md-0 border-bottom-sm"> <span>MASQUES</span> </a>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/accessoires/accessoires-pour-femme/" role="button" class="dropdown-link custom-asset-link-md py-2 py-md-0 border-bottom-sm"> <span>Accessoires</span> </a>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/accessoires/accessoires-pour-femme/lunettes-de-soleil/" role="button" class="dropdown-link custom-asset-link-md py-2 py-md-0 border-bottom-sm"> <span>Lunettes de soleil</span> </a>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/cadeaux/cadeaux-pour-femme/" role="button" class="dropdown-link custom-asset-link-md py-2 py-md-0 border-bottom-sm"> <span>Cadeaux</span> </a>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/search/?cgid=gifts-giftswomens-giftcards" role="button" class="dropdown-link custom-asset-link-md py-2 py-md-0 border-bottom-sm d-none"> <span>Cartes cadeaux</span> </a>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/search/?cgid=gift-guide" role="button" class="dropdown-link custom-asset-link-md py-2 py-md-0 border-bottom-sm d-none"> <span>Guide cadeaux</span> </a>
+</div>
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0"> 
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/femmes/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center">
+<picture>
+<img class="d-none d-md-block" alt="Femme portant une montre Gabby dorée." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw36452242/2021/SP21/set_0215/nav/0215_TopNav_Womens_X3.png" title="femmes" width="150" />
+<img class="d-block d-md-none card-img pt-2 pb-1" alt="Femme portant une montre Gabby dorée." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw41e543ab/2021/SP21/set_0215/nav/0215_TopNav_Womens_Mobile_X3.png" title="femmes" />
+</picture>
+<span class="custom-asset-link-md py-3 p-md-0">Nouveautés<br /> pour elle</span></a>
+</div>
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0 px-0">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/accessoires/masques-en-tissu/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center"><img class="d-none d-md-block" alt="Masques non médicaux avec des imprimés Fossil." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw8cec0744/2020/HO20/set_1001_nam/topnav/AntiviralTopNavMaskDesktop.jpg" title="navigation-avantage-femmes" width="150" /><img class="d-block d-md-none card-img pt-2 pb-1" alt="Masques non médicaux avec des imprimés Fossil." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwbbf7ccd8/2020/HO20/set_1001_nam/topnav/AntiviralTopNavMaskMobile.jpg" title="navigation-avantage-femmes" /><span class="custom-asset-link-md py-3 p-md-0">MASQUES</span></a>
+</div>
+</div>
+
+<style>
+    .dropdown-item.content-asset {
+        padding: 0 !important;
+    }
+    .nav-content-asset-col {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 40px;
+    }
+    @media screen and (max-width: 767px) {
+        .w-xs-100 {
+            width: 100% !important;
+            padding: 0px !important;
+        }
+    }
+    .img-header-text {
+        font-weight: 700;
+    }
+    @media screen and (min-width: 768px) {
+        .custom-asset-link-md {
+            border-bottom: 5px solid transparent !important;
+            font-weight: 700 !important;
+            letter-spacing: 0.4px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .border-bottom-sm {
+            border-bottom: 1px solid #ccc;
+        }
+        .custom-asset-link-md {
+            text-transform: uppercase;
+        }
+    }
+    #fix-wrapper.scrolled .navbar .custom-asset-link-md {
+        display: none;
+    }
+</style>
+</div> 
+</li>
+</ul>
+</ul>
+</li>
+<li class="nav-item dropdown" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/hommes/" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Hommes
+<img class="icon right-carousel-arrow pull-right d-lg-none" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw8a3873b6/images/svg-icons/right-carousel-arrow.svg" alt="" width=" " height=" " />
+</a>
+<ul class="dropdown-menu" role="menu" aria-hidden="true">
+<ul class="menu-list level-2">
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-homme/" role="button" class="dropdown-link">
+<span>Montres</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-homme/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/hommes/montres/" role="button" class="dropdown-link">Nouveaut&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-homme/montres-connectees/" role="button" class="dropdown-link">Montres connect&eacute;es</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-homme/montres-connectees-hybrides/" role="button" class="dropdown-link">Montres connect&eacute;es hybrides</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-homme/montres-mecaniques/" role="button" class="dropdown-link">Montres m&eacute;caniques</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-homme/montres-en-cuir/" role="button" class="dropdown-link">Montres en cuir</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-homme/montres-en-acier-inoxydable/" role="button" class="dropdown-link">Montres en acier inoxydable</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-homme/montres-minimalistes/" role="button" class="dropdown-link">Montres minimalistes</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-homme/bracelets-de-montres/" role="button" class="dropdown-link">Bracelets de Montres</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-pour-homme/" role="button" class="dropdown-link">
+<span>Sacs</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-pour-homme/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/hommes/sacs/" role="button" class="dropdown-link">Nouveaut&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-pour-homme/sacs-a-dos/" role="button" class="dropdown-link">Sacs &agrave; dos</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-pour-homme/besaces/" role="button" class="dropdown-link">Besaces</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-pour-homme/porte-documents/" role="button" class="dropdown-link">Porte-documents</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-pour-homme/sacs-de-voyage/" role="button" class="dropdown-link">Sacs de voyage</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-homme/" role="button" class="dropdown-link">
+<span>Porte-monnaie</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-homme/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/hommes/porte-monnaie/" role="button" class="dropdown-link">Nouveaut&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-homme/portefeuilles-rfid/" role="button" class="dropdown-link">Portefeuilles RFID</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-homme/portefeuilles-a-deux-volets/" role="button" class="dropdown-link">Portefeuilles &agrave; Deux Volets</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-homme/porte-cartes/" role="button" class="dropdown-link">Porte-cartes</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-homme/portefeuilles-a-poche-avant/" role="button" class="dropdown-link">Portefeuilles &agrave; poche avant</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-homme/portefeuilles-avec-pince-a-billets/" role="button" class="dropdown-link">Portefeuilles avec pince &agrave; billets</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-homme/portefeuilles-a-trois-volets/" role="button" class="dropdown-link">Portefeuilles &agrave; trois volets</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item content-asset">
+<div class="content-asset">
+<div class="d-flex flex-column flex-md-row">
+
+<div class="nav-content-asset-col pr-0 d-none d-md-inline-block"></div>
+<div class="nav-content-asset-col p-0 w-xs-100">
+
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/bijoux/bijoux-homme/" role="button" class="dropdown-link custom-asset-link-md py-2 py-md-0 border-bottom-sm"> <span>Bijoux</span> </a>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/accessoires/masques-en-tissu/" role="button" class="dropdown-link custom-asset-link-md py-2 py-md-0 border-bottom-sm"> <span>MASQUES</span> </a>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/accessoires/accessoires-pour-homme/" role="button" class="dropdown-link custom-asset-link-md py-2 py-md-0 border-bottom-sm"> <span>Accessoires</span> </a>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/accessoires/accessoires-pour-homme/lunettes-de-soleil/" role="button" class="dropdown-link custom-asset-link-md py-2 py-md-0 border-bottom-sm"> <span>Lunettes de soleil</span> </a>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/cadeaux/cadeaux-pour-homme/" role="button" class="dropdown-link custom-asset-link-md py-2 py-md-0 border-bottom-sm"> <span>Cadeaux</span> </a>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/search/?cgid=gifts-giftsmens-giftcards" role="button" class="dropdown-link custom-asset-link-md py-2 py-md-0 border-bottom-sm d-none"> <span>Cartes cadeaux</span> </a>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/search/?cgid=gift-guide" role="button" class="dropdown-link custom-asset-link-md py-2 py-md-0 border-bottom-sm d-none"> <span>Guide cadeaux</span> </a>
+</div>
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0"> 
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/hommes/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center">
+<picture>
+<img class="d-none d-md-block" alt="Homme portant une montre Everett en acier inoxydable." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw1cf0511b/2021/SP21/set_0215/nav/0215_TopNav_Mens_X3.png" title="hommes" width="150" />
+<img class="d-block d-md-none card-img pt-2 pb-1" alt="Homme portant une montre Everett en acier inoxydable." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwc676e5ed/2021/SP21/set_0215/nav/0215_TopNav_Mens_Mobile_X3.png" title="hommes" />
+</picture>
+<span class="custom-asset-link-md py-3 p-md-0">Nouveautés<br /> pour lui</span></a>
+</div>
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0 px-0"> 
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/accessoires/masques-en-tissu/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center"><img class="d-none d-md-block" alt="Masques non médicaux avec des imprimés Fossil." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw8cec0744/2020/HO20/set_1001_nam/topnav/AntiviralTopNavMaskDesktop.jpg" title="navigation-avantage-hommes" width="150" /><img class="d-block d-md-none card-img pt-2 pb-1" alt="Masques non médicaux avec des imprimés Fossil." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwbbf7ccd8/2020/HO20/set_1001_nam/topnav/AntiviralTopNavMaskMobile.jpg" title="navigation-avantage-hommes" /><span class="custom-asset-link-md py-3 p-md-0">MASQUES</span></a>
+</div>
+</div>
+
+<style>
+    .dropdown-item.content-asset {
+        padding: 0 !important;
+    }
+    .nav-content-asset-col {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 40px;
+    }
+    @media screen and (max-width: 767px) {
+        .w-xs-100 {
+            width: 100% !important;
+            padding: 0px !important;
+        }
+    }
+    .img-header-text {
+        font-weight: 700;
+    }
+    @media screen and (min-width: 768px) {
+        .custom-asset-link-md {
+            border-bottom: 5px solid transparent !important;
+            font-weight: 700 !important;
+            letter-spacing: 0.4px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .border-bottom-sm {
+            border-bottom: 1px solid #ccc;
+        }
+        .custom-asset-link-md {
+            text-transform: uppercase;
+        }
+    }
+    #fix-wrapper.scrolled .navbar .custom-asset-link-md {
+        display: none;
+    }
+</style>
+</div> 
+</li>
+</ul>
+</ul>
+</li>
+<li class="nav-item dropdown" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Montres
+<img class="icon right-carousel-arrow pull-right d-lg-none" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw8a3873b6/images/svg-icons/right-carousel-arrow.svg" alt="" width=" " height=" " />
+</a>
+<ul class="dropdown-menu" role="menu" aria-hidden="true">
+<ul class="menu-list level-2">
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-homme/" role="button" class="dropdown-link">
+<span>Montres pour homme</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-homme/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/hommes/montres/" role="button" class="dropdown-link">Nouveaut&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-homme/montres-connectees/" role="button" class="dropdown-link">Montres connect&eacute;es</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-homme/montres-connectees-hybrides/" role="button" class="dropdown-link">Montres connect&eacute;es hybrides</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-homme/montres-mecaniques/" role="button" class="dropdown-link">Montres m&eacute;caniques</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-homme/montres-en-cuir/" role="button" class="dropdown-link">Montres en cuir</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-homme/montres-en-acier-inoxydable/" role="button" class="dropdown-link">Montres en acier inoxydable</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-homme/montres-minimalistes/" role="button" class="dropdown-link">Montres minimalistes</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-homme/bracelets-de-montres/" role="button" class="dropdown-link">Bracelets de montres</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-femme/" role="button" class="dropdown-link">
+<span>Montres pour femme</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/femmes/montres/" role="button" class="dropdown-link">Nouveaut&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-femme/montres-connectees/" role="button" class="dropdown-link">Montres connect&eacute;es</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-femme/montres-connectees-hybrides/" role="button" class="dropdown-link">Montres connect&eacute;es hybrides</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-femme/montres-boyfriend/" role="button" class="dropdown-link">Montres boyfriend</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-femme/montres-en-cuir/" role="button" class="dropdown-link">Montres en cuir</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-femme/montres-dore-rose/" role="button" class="dropdown-link">Montres dor&eacute; rose</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-femme/montres-en-acier-inoxydable/" role="button" class="dropdown-link">Montres en acier inoxydable</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/montres-pour-femme/bracelets-de-montres/" role="button" class="dropdown-link">Bracelets de Montres</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/tendance/" role="button" class="dropdown-link">
+<span>Tendance</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/tendance/plongez/" role="button" class="dropdown-link">Plongez</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/tendance/robuste/" role="button" class="dropdown-link">Robuste</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/montres-mini/" role="button" class="dropdown-link">Mini</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres/tendance/habille/" role="button" class="dropdown-link">Habill&eacute;</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/collectors-club/" role="button" class="dropdown-link">Collectors Club</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item content-asset">
+<div class="content-asset">
+<style>
+			.dropdown-item.content-asset {
+				padding: 0 !important;
+			}
+			.nav-content-asset-col {
+				display: inline-block;
+				vertical-align: top;
+				padding: 0 40px;
+			}
+			@media screen and (max-width:767px){
+				.w-xs-100{
+					width:100% !important;
+					padding:0px !important;
+				}
+			}
+			.img-header-text{
+				font-weight:700;
+			}
+			@media screen and (min-width:768px){
+				.custom-asset-link-md {
+					border-bottom: 5px solid transparent !important;
+					font-weight: 700 !important;
+					letter-spacing: .4px;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+			}
+			@media screen and (max-width:767px){
+				.border-bottom-sm{
+					border-bottom:1px solid #ccc;
+				}
+				.custom-asset-link-md {
+					text-transform: uppercase;
+				}
+			}
+			#fix-wrapper.scrolled .navbar .custom-asset-link-md {
+				display: none;
+			}
+		</style>
+<div class="d-flex flex-column flex-md-row"> 
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0"> 
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center">
+<picture>
+<img class="d-none d-md-block" alt="Montre Gabby dorée." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw359d993d/2021/SP21/set_0215/nav/0215_TopNav_Gabby_X3.png" title="montres-femme" width="150" />
+<img class="d-block d-md-none card-img pt-2 pb-1" alt="Montre Gabby dorée." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw805f708a/2021/SP21/set_0215/nav/0215_TopNav_Gabby_Mobile_X3.png" title="montres-femme" />
+</picture>
+<span class="custom-asset-link-md py-3 p-md-0">La montre<br /> Gabby</span></a>
+</div>
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0 px-0">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-homme/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center">
+<picture>
+<img class="d-none d-md-block" alt="Montre Everett en acier inoxydable." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw93daf750/2021/SP21/set_0215/nav/0215_TopNav_Everett_X3.png" title="montres-homme" width="150" />
+<img class="d-block d-md-none card-img pt-2 pb-1" alt="Montre Everett en acier inoxydable." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwa9bd3054/2021/SP21/set_0215/nav/0215_TopNav_Everett_Mobile_X3.png" title="montres-homme" />
+</picture>
+<span class="custom-asset-link-md py-3 p-md-0">La montre<br /> Everett</span></a>
+</div>
+</div>
+</div> 
+</li>
+</ul>
+</ul>
+</li>
+<li class="nav-item dropdown" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Montres connect&eacute;es
+<img class="icon right-carousel-arrow pull-right d-lg-none" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw8a3873b6/images/svg-icons/right-carousel-arrow.svg" alt="" width=" " height=" " />
+</a>
+<ul class="dropdown-menu" role="menu" aria-hidden="true">
+<ul class="menu-list level-2">
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/montres-connectees/" role="button" class="dropdown-link">
+<span>Montres connect&eacute;es</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres-connectees/montres-connectees/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/montres-connectees/bracelets-de-montre/" role="button" class="dropdown-link">Bracelets de montre</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/montres-connectees/chargeur-montre-connectee/" role="button" class="dropdown-link">Chargeur montre connect&eacute;e</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/montres-connectees/wear-os-by-google/" role="button" class="dropdown-link">Wear OS by Google</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/montres-connectees/aide/" role="button" class="dropdown-link">Aide</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/montres-connectees-hybrides/" role="button" class="dropdown-link">
+<span>Montres connect&eacute;es hybrides</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres-connectees/montres-connectees-hybrides/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/montres-connectees-hybrides/bracelets-de-montre/" role="button" class="dropdown-link">Bracelets de montre</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/montres-connectees-hybrides/chargeur-montre-hybride/" role="button" class="dropdown-link">Chargeur montre hybride</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/montres-connectees-hybrides/appli-fossil-hybride/" role="button" class="dropdown-link">Appli Fossil hybride</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/montres-connectees-hybrides/aide/" role="button" class="dropdown-link">Aide</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres-connectees/" role="button" class="dropdown-link">
+<span>D&eacute;couvrir</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/decouvrir/gen-5e/" role="button" class="dropdown-link">Gen 5E</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/decouvrir/5e-generation/" role="button" class="dropdown-link">5e g&eacute;n&eacute;ration</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/decouvrir/sport/" role="button" class="dropdown-link">Sport</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/decouvrir/4e-generation/" role="button" class="dropdown-link">4e g&eacute;n&eacute;ration</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/decouvrir/hybride-hr/" role="button" class="dropdown-link">Hybride HR</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/montres-connectees/decouvrir/hybrides/" role="button" class="dropdown-link">Hybrides</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item content-asset">
+<div class="content-asset">
+<style>
+			.dropdown-item.content-asset {
+				padding: 0 !important;
+			}
+			.nav-content-asset-col {
+				display: inline-block;
+				vertical-align: top;
+				padding: 0 40px;
+			}
+			@media screen and (max-width:767px){
+				.w-xs-100{
+					width:100% !important;
+					padding:0px !important;
+				}
+			}
+			.img-header-text{
+				font-weight:700;
+			}
+			@media screen and (min-width:768px){
+				.custom-asset-link-md {
+					border-bottom: 5px solid transparent !important;
+					font-weight: 700 !important;
+					letter-spacing: .4px;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+			}
+			@media screen and (max-width:767px){
+				.border-bottom-sm{
+					border-bottom:1px solid #ccc;
+				}
+				.custom-asset-link-md {
+					text-transform: uppercase;
+				}
+			}
+			#fix-wrapper.scrolled .navbar .custom-asset-link-md {
+				display: none;
+			}
+		</style>
+<div class="d-flex flex-column flex-md-row"> 
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0"> 
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres-connectees/montres-connectees/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center">
+<img class="d-none d-md-block" alt="Une montre connectée 5ème génération en acier inoxydable." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw7e5e0d38/2021/SP21/set_0117/nav/0117_TopNav_Smartwatches_5.jpg" title="navigation-avantage-montres-connectées" width="150" />
+<img class="d-block d-md-none card-img pt-2 pb-1" alt="Une montre connectée 5ème génération en acier inoxydable." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwaafae750/2021/SP21/set_0117/nav/0117_TopNav_Smartwatches_5_Mobile.jpg" title="navigation-avantage-montres-connectées" />
+<span class="custom-asset-link-md py-3 p-md-0">Découvrir les<br /> montres<br /> connectées<br /> 5ème génération</span>
+</a>
+</div>
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0 px-0"> 
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres-connectees/generations/gen-5e/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center">
+<img class="d-none d-md-block" alt="Un homme portant une montre connectée 5ème génération E." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw3652d304/2021/SP21/set_0117/nav/0117_TopNav_Smartwatches_5E.jpg" title="navigation-avantage-montres-connectées" width="150" />
+<img class="d-block d-md-none card-img pt-2 pb-1" alt="Un homme portant une montre connectée 5ème génération E." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw78a6b954/2021/SP21/set_0117/nav/0117_TopNav_Smartwatches_5E_mobile.jpg" title="navigation-avantage-montres-connectées" />
+<span class="custom-asset-link-md py-3 p-md-0">Voici la montre<br /> connectée<br /> 5ème génération E</span>
+</a>
+</div>
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres-connectees/montres-connectees-hybrides/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center">
+<img class="d-none d-md-block" alt="La montre connectée hybride HR." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw223043d1/2021/SP21/set_0117/nav/0117_TopNav_Smartwatches_Hybrid.jpg" title="navigation-avantage-montres-connectées" width="150" />
+<img class="d-block d-md-none card-img pt-2 pb-1" alt="La montre connectée hybride HR." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw26eaba22/2021/SP21/set_0117/nav/0117_TopNav_Smartwatches_Hybrid_mobile.jpg" title="navigation-avantage-montres-connectées" />
+<span class="custom-asset-link-md py-3 p-md-0">Modèle plus petit</span>
+</a>
+</div>
+</div>
+</div> 
+</li>
+</ul>
+</ul>
+</li>
+<li class="nav-item dropdown" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Bijoux
+<img class="icon right-carousel-arrow pull-right d-lg-none" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw8a3873b6/images/svg-icons/right-carousel-arrow.svg" alt="" width=" " height=" " />
+</a>
+<ul class="dropdown-menu" role="menu" aria-hidden="true">
+<ul class="menu-list level-2">
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/bijoux-homme/" role="button" class="dropdown-link">
+<span>Bijoux homme</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/bijoux/bijoux-homme/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/hommes/bijoux/" role="button" class="dropdown-link">Nouveaut&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/bijoux-homme/meilleures-ventes/" role="button" class="dropdown-link">Meilleures ventes</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/bijoux-homme/bracelets/" role="button" class="dropdown-link">Bracelets</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/bijoux-homme/colliers/" role="button" class="dropdown-link">Colliers</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/bijoux-femme/" role="button" class="dropdown-link">
+<span>Bijoux femme</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/bijoux/bijoux-femme/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/femmes/bijoux/" role="button" class="dropdown-link">Nouveaut&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/bijoux-femme/meilleures-ventes/" role="button" class="dropdown-link">Meilleures ventes</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/bijoux-femme/bracelets/" role="button" class="dropdown-link">Bracelets</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/bijoux-femme/boucles-doreilles/" role="button" class="dropdown-link">Boucles d'oreilles</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/bijoux-femme/colliers/" role="button" class="dropdown-link">Colliers</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/bijoux-femme/bijoux-a-graver/" role="button" class="dropdown-link">Bijoux &agrave; graver</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/bijoux-femme/argent-sterling/" role="button" class="dropdown-link">Argent Sterling</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/si-charmants/" role="button" class="dropdown-link">
+<span>Si charmants</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/si-charmants/tout-afficher/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/si-charmants/charms/" role="button" class="dropdown-link">Charms</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/bijoux/si-charmants/cha%C3%AEnes/" role="button" class="dropdown-link">Cha&icirc;nes</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item content-asset">
+<div class="content-asset">
+<div class="d-flex flex-column-reverse flex-md-row"> 
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0"> 
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/bijoux/bijoux-femme/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center">
+<picture>
+<img class="d-none d-md-block" alt="Cinq colliers avec des perles de bien-être." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw219cf555/2021/SP21/set_0215/nav/0215_TopNav_Jewelry_X3.png" title="bijoux" width="150" />
+<img class="d-block d-md-none card-img pt-2 pb-1" alt="Cinq colliers avec des perles de bien-être." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw91693856/2021/SP21/set_0215/nav/0215_TopNav_Jewelry_Mobile_X3.png" title="bijoux" />
+</picture>
+<span class="custom-asset-link-md py-3 p-md-0">Le bien-être est à<br /> l’honneur</span></a>
+</div>
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0 px-0"> 
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/bijoux/si-charmants/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center">
+<picture>
+<img class="d-none d-md-block" alt="Deux colliers dorés avec charms." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw374fa2c4/2021/SP21/set_0215/nav/0215_TopNav_Charms_X3.png" title="bijoux-charms" width="150" />
+<img class="d-block d-md-none card-img pt-2 pb-1" alt="Deux colliers dorés avec charms." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwa8bcdd56/2021/SP21/set_0215/nav/0215_TopNav_Charms_Mobile_X3.png" title="bijoux-charms" />
+</picture>
+<span class="custom-asset-link-md py-3 p-md-0">La boutique<br /> de charms</span></a>
+</div>
+</div>
+
+<style>
+    .dropdown-item.content-asset {
+        padding: 0 !important;
+    }
+    .nav-content-asset-col {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 40px;
+    }
+    @media screen and (max-width:767px){
+        .w-xs-100{
+            width:100% !important;
+            padding:0px !important;
+        }
+    }
+    .img-header-text{
+        font-weight:700;
+    }
+    @media screen and (min-width:768px){
+        .custom-asset-link-md {
+            border-bottom: 5px solid transparent !important;
+            font-weight: 700 !important;
+            letter-spacing: .4px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+    @media screen and (max-width:767px){
+        .border-bottom-sm{
+            border-bottom:1px solid #ccc;
+        }
+        .custom-asset-link-md {
+            text-transform: uppercase;
+        }
+    }
+</style>
+</div> 
+</li>
+</ul>
+</ul>
+</li>
+<li class="nav-item dropdown" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Sacs
+<img class="icon right-carousel-arrow pull-right d-lg-none" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw8a3873b6/images/svg-icons/right-carousel-arrow.svg" alt="" width=" " height=" " />
+</a>
+<ul class="dropdown-menu" role="menu" aria-hidden="true">
+<ul class="menu-list level-2">
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-pour-homme/" role="button" class="dropdown-link">
+<span>Sacs pour homme</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-pour-homme/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/hommes/sacs/" role="button" class="dropdown-link">Nouveaut&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-pour-homme/meilleures-ventes/" role="button" class="dropdown-link">Meilleures ventes</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-pour-homme/sacs-a-dos/" role="button" class="dropdown-link">Sacs &agrave; dos</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-pour-homme/sacs-embosses/" role="button" class="dropdown-link">Sacs emboss&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-pour-homme/sacs-de-voyage/" role="button" class="dropdown-link">Sacs de voyage</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-pour-homme/porte-documents/" role="button" class="dropdown-link">Porte-documents</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-a-main-pour-femme/" role="button" class="dropdown-link">
+<span>Sacs &agrave; main pour femme</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-a-main-pour-femme/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/femmes/sacs/" role="button" class="dropdown-link">Nouveaut&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-a-main-pour-femme/sacs-double-porte-et-sacs-porte-epaule/" role="button" class="dropdown-link">Sacs double port&eacute; et sacs port&eacute; &eacute;paule</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-a-main-pour-femme/sacs-a-dos/" role="button" class="dropdown-link">Sacs &agrave; dos</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-a-main-pour-femme/cabas/" role="button" class="dropdown-link">Cabas</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-a-main-pour-femme/meilleures-ventes/" role="button" class="dropdown-link">Meilleures ventes</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-a-main-pour-femme/sacs-porte-croise/" role="button" class="dropdown-link">Sacs port&eacute; crois&eacute;</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-a-main-pour-femme/sacs-embosses/" role="button" class="dropdown-link">Sacs emboss&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-a-main-pour-femme/pochettes-porte-croise-pm/" role="button" class="dropdown-link">Pochettes port&eacute; crois&eacute; PM</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-a-main-pour-femme/sacs-de-voyage/" role="button" class="dropdown-link">Sacs de voyage</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/sacs/sacs-a-main-pour-femme/porte-documents/" role="button" class="dropdown-link">Porte-documents</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item content-asset">
+<div class="content-asset">
+<style>
+			.dropdown-item.content-asset {
+				padding: 0 !important;
+			}
+			.nav-content-asset-col {
+				display: inline-block;
+				vertical-align: top;
+				padding: 0 40px;
+			}
+			@media screen and (max-width:767px){
+				.w-xs-100{
+					width:100% !important;
+					padding:0px !important;
+				}
+			}
+			.img-header-text{
+				font-weight:700;
+			}
+			@media screen and (min-width:768px){
+				.custom-asset-link-md {
+					border-bottom: 5px solid transparent !important;
+					font-weight: 700 !important;
+					letter-spacing: .4px;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+			}
+			@media screen and (max-width:767px){
+				.border-bottom-sm{
+					border-bottom:1px solid #ccc;
+				}
+				.custom-asset-link-md {
+					text-transform: uppercase;
+				}
+			}
+			#fix-wrapper.scrolled .navbar .custom-asset-link-md {
+				display: none;
+			}
+		</style>
+<div class="d-flex flex-column flex-md-row"> 
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0"> 
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-a-main-pour-femme/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center"><img class="d-none d-md-block" alt="Une personne portant deux sacs Jolie en cuir brun." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw1e42822e/2021/SP21/set_0117/nav/0117_TopNav_Bags_womens.jpg" title="navigation-avantage-sacs-femmes" width="150" /><img class="d-block d-md-none card-img pt-2 pb-1" alt="Une personne portant deux sacs Jolie en cuir brun." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwe2c4c37f/2021/SP21/set_0117/nav/0117_TopNav_Bags_womens_mobile.jpg" title="navigation-avantage-sacs-femmes" /><span class="custom-asset-link-md py-3 p-md-0">Jolie,<br /> la plus populaire</span></a>
+</div>
+</div>
+</div> 
+</li>
+</ul>
+</ul>
+</li>
+<li class="nav-item dropdown" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Porte-monnaie
+<img class="icon right-carousel-arrow pull-right d-lg-none" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw8a3873b6/images/svg-icons/right-carousel-arrow.svg" alt="" width=" " height=" " />
+</a>
+<ul class="dropdown-menu" role="menu" aria-hidden="true">
+<ul class="menu-list level-2">
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-homme/" role="button" class="dropdown-link">
+<span>Porte-monnaie pour homme</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-homme/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/hommes/porte-monnaie/" role="button" class="dropdown-link">Nouveaut&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-homme/meilleures-ventes/" role="button" class="dropdown-link">Meilleures ventes</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-homme/portefeuilles-rfid/" role="button" class="dropdown-link">Portefeuilles RFID</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-homme/portefeuilles-a-deux-volets/" role="button" class="dropdown-link">Portefeuilles &agrave; deux volets</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-homme/porte-cartes/" role="button" class="dropdown-link">Porte-cartes</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-homme/portefeuilles-a-poche-avant/" role="button" class="dropdown-link">Portefeuilles &agrave; poche avant</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-homme/portefeuilles-avec-pince-a-billets/" role="button" class="dropdown-link">Portefeuilles avec pince &agrave; billets</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-homme/portefeuilles-embosses/" role="button" class="dropdown-link">Portefeuilles emboss&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-homme/portefeuilles-affaires/" role="button" class="dropdown-link">Portefeuilles affaires</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-homme/portefeuilles-a-trois-volets/" role="button" class="dropdown-link">Portefeuilles &agrave; trois volets</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-femme/" role="button" class="dropdown-link">
+<span>Porte-monnaie pour femme</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-femme/" role="button" class="dropdown-link">Tout afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/nouveautes/femmes/porte-monnaie/" role="button" class="dropdown-link">Nouveaut&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-femme/meilleures-ventes/" role="button" class="dropdown-link">Meilleures ventes</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-femme/portefeuilles-rfid/" role="button" class="dropdown-link">Portefeuilles RFID</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-femme/porte-monnaie-zippes/" role="button" class="dropdown-link">Porte-monnaie zipp&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-femme/portefeuilles-embosses/" role="button" class="dropdown-link">Portefeuilles emboss&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-femme/porte-monnaie-a-rabat/" role="button" class="dropdown-link">Porte-monnaie &agrave; rabat</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-femme/mini-porte-monnaie/" role="button" class="dropdown-link">Mini porte-monnaie</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-femme/pochettes-pour-telephone/" role="button" class="dropdown-link">Pochettes pour t&eacute;l&eacute;phone</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/porte-monnaie/porte-monnaie-pour-femme/pochettes/" role="button" class="dropdown-link">Pochettes</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item content-asset">
+<div class="content-asset">
+<div class="d-flex flex-column-reverse flex-md-row"> 
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0"> 
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/porte-monnaie/porte-monnaie-pour-femme/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center">
+<picture>
+<img class="d-none d-md-block" alt="Deux porte-monnaie en cuir brun." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwddf8f1cf/2021/SP21/set_0215/nav/0215_TopNav_Wallets_X3.png" title="porte-monnaie" width="150" />
+<img class="d-block d-md-none card-img pt-2 pb-1" alt="Deux porte-monnaie en cuir brun." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw9fa8bf90/2021/SP21/set_0215/nav/0215_TopNav_Wallets_Mobile_X3.png" title="porte-monnaie" />
+</picture>
+<span class="custom-asset-link-md py-3 p-md-0">Faites votre choix</span></a>
+</div>
+</div>
+
+<style>
+    .dropdown-item.content-asset {
+        padding: 0 !important;
+    }
+    .nav-content-asset-col {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 40px;
+    }
+    @media screen and (max-width:767px){
+        .w-xs-100{
+            width:100% !important;
+            padding:0px !important;
+        }
+    }
+    .img-header-text{
+        font-weight:700;
+    }
+    @media screen and (min-width:768px){
+        .custom-asset-link-md {
+            border-bottom: 5px solid transparent !important;
+            font-weight: 700 !important;
+            letter-spacing: .4px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+    @media screen and (max-width:767px){
+        .border-bottom-sm{
+            border-bottom:1px solid #ccc;
+        }
+        .custom-asset-link-md {
+            text-transform: uppercase;
+        }
+    }
+</style>
+</div> 
+</li>
+</ul>
+</ul>
+</li>
+<li class="nav-item dropdown" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Cadeaux
+<img class="icon right-carousel-arrow pull-right d-lg-none" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw8a3873b6/images/svg-icons/right-carousel-arrow.svg" alt="" width=" " height=" " />
+</a>
+<ul class="dropdown-menu" role="menu" aria-hidden="true">
+<ul class="menu-list level-2">
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-homme/" role="button" class="dropdown-link">
+<span>Cadeaux pour homme</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-homme/nos-cadeaux-favoris/" role="button" class="dropdown-link">Nos cadeaux favoris</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-homme/cadeaux-a-personnaliser/" role="button" class="dropdown-link">Cadeaux &agrave; personnaliser</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-homme/cadeaux-personnalises/" role="button" class="dropdown-link">Cadeaux personnalis&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-homme/cadeaux-graves/" role="button" class="dropdown-link">Cadeaux grav&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-homme/nos-cadeaux-a-moins-de-50/" role="button" class="dropdown-link">Nos cadeaux &agrave; moins de 50&euro;</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-homme/nos-cadeaux-a-moins-de-100/" role="button" class="dropdown-link">Nos cadeaux &agrave; moins de 100&euro;</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-homme/coffrets-cadeaux/" role="button" class="dropdown-link">Coffrets cadeaux</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item has-subcategories" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-femme/" role="button" class="dropdown-link">
+<span>Cadeaux pour femme</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-femme/nos-cadeaux-favoris/" role="button" class="dropdown-link">Nos cadeaux favoris</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-femme/cadeaux-a-personnaliser/" role="button" class="dropdown-link">Cadeaux &agrave; personnaliser</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-femme/cadeaux-personnalises/" role="button" class="dropdown-link">Cadeaux personnalis&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-femme/cadeaux-graves/" role="button" class="dropdown-link">Cadeaux grav&eacute;s</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-femme/nos-cadeaux-a-moins-de-50/" role="button" class="dropdown-link">Nos cadeaux &agrave; moins de 50&euro;</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-femme/nos-cadeaux-a-moins-de-100/" role="button" class="dropdown-link">Nos cadeaux &agrave; moins de 100&euro;</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/cadeaux/cadeaux-pour-femme/coffrets-cadeaux/" role="button" class="dropdown-link">Coffrets cadeaux</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item content-asset">
+<div class="content-asset">
+<style>
+			.dropdown-item.content-asset {
+				padding: 0 !important;
+			}
+			.nav-content-asset-col {
+				display: inline-block;
+				vertical-align: top;
+				padding: 0 40px;
+			}
+			@media screen and (max-width:767px){
+				.w-xs-100{
+					width:100% !important;
+					padding:0px !important;
+				}
+			}
+			.img-header-text{
+				font-weight:700;
+			}
+			@media screen and (min-width:768px){
+				.custom-asset-link-md {
+					border-bottom: 5px solid transparent !important;
+					font-weight: 700 !important;
+					letter-spacing: .4px;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+			}
+			@media screen and (max-width:767px){
+				.border-bottom-sm{
+					border-bottom:1px solid #ccc;
+				}
+				.custom-asset-link-md {
+					text-transform: uppercase;
+				}
+			}
+			#fix-wrapper.scrolled .navbar .custom-asset-link-md {
+				display: none;
+			}
+		</style>
+<div class="d-flex flex-column flex-md-row"> 
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0"> 
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/cadeaux/cadeaux-pour-femme/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center"><img class="d-none d-md-block" alt="Une femme portant deux colliers dorés." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwb2e4edf1/2021/SP21/set_0117/nav/0117_TopNav_Gifts_Womens.jpg" title="navigation-avantage-cadeaux-femmes" width="150" /><img class="d-block d-md-none card-img pt-2 pb-1" alt="Une femme portant deux colliers dorés." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwc3e1e252/2021/SP21/set_0117/nav/0117_TopNav_Gifts_Womens_Mobile.jpg" title="navigation-avantage-cadeaux-femmes" /><span class="custom-asset-link-md py-3 p-md-0">Cadeaux pour<br /> elle</span></a>
+</div>
+<div class="nav-content-asset-col d-flex flex-column flex-md-row ml-n5 mr-n5 ml-md-0 mr-md-0"> 
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/cadeaux/cadeaux-pour-homme/" role="button" class="border-bottom-sm pb-1 pb-md-0 mb-0 text-center"><img class="d-none d-md-block" alt="Un homme portant une montre en cuir brun avec un cadran bleu." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw03584a54/2021/SP21/set_0117/nav/0117_TopNav_Gifts_Men.jpg" title="navigation-avantage-cadeaux-hommes" width="150" /><img class="d-block d-md-none card-img pt-2 pb-1" alt="Un homme portant une montre en cuir brun avec un cadran bleu." src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwd17c3c35/2021/SP21/set_0117/nav/0117_TopNav_Gifts_Men_mobile.jpg" title="navigation-avantage-cadeaux-hommes" /><span class="custom-asset-link-md py-3 p-md-0">Cadeaux pour<br /> lui</span></a>
+</div>
+</div>
+</div> 
+</li>
+</ul>
+</ul>
+</li>
+<li class="nav-item dropdown last" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Outlet
+<img class="icon right-carousel-arrow pull-right d-lg-none" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw8a3873b6/images/svg-icons/right-carousel-arrow.svg" alt="" width=" " height=" " />
+</a>
+<ul class="dropdown-menu" role="menu" aria-hidden="true">
+<ul class="menu-list level-2">
+<li class="dropdown-item has-subcategories last" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-homme/" role="button" class="dropdown-link">
+<span>Outlet Homme</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/outlet/outlet-homme/" role="button" class="dropdown-link">Tout Afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-homme/montres-connectees/" role="button" class="dropdown-link">Montres Connect&eacute;es</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-homme/montres/" role="button" class="dropdown-link">Montres</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-homme/portefeuilles/" role="button" class="dropdown-link">Portefeuilles</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-homme/bijoux/" role="button" class="dropdown-link">Bijoux</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-homme/sacs/" role="button" class="dropdown-link">Sacs</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-homme/coffrets-cadeaux/" role="button" class="dropdown-link">Coffrets Cadeaux</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-homme/accessoires/" role="button" class="dropdown-link">Accessoires</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-homme/montres-connectees-reconditionnees/" role="button" class="dropdown-link">Montres connect&eacute;es reconditionn&eacute;es</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item has-subcategories last" role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-femme/" role="button" class="dropdown-link">
+<span>Outlet Femme</span>
+</a>
+<ul class="menu-list level-3">
+<li class="dropdown-item " role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/outlet/outlet-femme/" role="button" class="dropdown-link">Tout Afficher</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-femme/montres-connectees/" role="button" class="dropdown-link">Montres Connect&eacute;es</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-femme/montres/" role="button" class="dropdown-link">Montres</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-femme/portefeuilles/" role="button" class="dropdown-link">Portefeuilles</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-femme/bijoux/" role="button" class="dropdown-link">Bijoux</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-femme/sacs/" role="button" class="dropdown-link">Sacs</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-femme/coffrets-cadeaux/" role="button" class="dropdown-link">Coffrets Cadeaux</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-femme/accessoires/" role="button" class="dropdown-link">Accessoires</a>
+</li>
+<li class="dropdown-item " role="menuitem">
+<a href="/stam/sites/www.fossil.com/fr-fr/fr-fr/outlet/outlet-femme/montres-connectees-reconditionnees/" role="button" class="dropdown-link">Montres connect&eacute;es reconditionn&eacute;es</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-item content-asset">
+<div class="content-asset">
+<style>
+	.dropdown-item.content-asset {
+		padding: 0 !important;
+	}
+	.custom-asset-link {
+		border-bottom: 5px solid transparent;
+		font-weight: 700 !important;
+		letter-spacing: .4px;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	.nav-content-asset-col {
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 40px;
+	}
+	.text-35{
+		font-size:25px;
+	}
+	@media screen and (min-width:769px){
+		.nav300 {
+			max-width: 300px;
+		}
+		.text-35{
+			font-size:30px !important;
+		}
+	}
+</style>
+<div class="mx-md-5 nav300">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/outlet/" role="button" class="dropdown-link custom-asset-link">
+<div class="card-container">
+<div class="card-img">
+<img class="d-none d-md-block" alt="JUSQU’À 70 % DE REMISE" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw30935e83/2021/SP21/set_0117/nav/0117_TopNav_Outlet.jpg" title="navigation-élément-entrepôt" width="300" />
+<img class="d-block d-md-none card-img" alt="JUSQU’À 70 % DE REMISE" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw291b03fb/2021/SP21/set_0117/nav/0117_TopNav_Outlet_mobile.jpg" title="navigation-élément-entrepôt" />
+</div>
+<div class="card-body card-img-overlay d-flex justify-content-center align-items-center text-center">
+<h2 class="text-white text-35">JUSQU’À<br>70 % DE REMISE</h2>
+</div>
+</div>
+</a>
+</div>
+</div> 
+</li>
+</ul>
+</ul>
+</li>
+<li class="nav-item dropdown country-selector nav-item-dark nav-alt d-lg-none" data-url="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/Page-SetLocale">
+<span class="btn dropdown-toggle" id="dropdownCountrySelectorMobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Adresse d&rsquo;exp&eacute;dition
+<span class="visually-hidden">fran&ccedil;ais (France)</span>
+<i class="flag-icon flag-icon-fr" aria-hidden="true"></i>
+<img class="icon arrow-down " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dwdfff1bdf/images/svg-icons/arrow-down.svg" alt="" width=" " height=" " />
+</span>
+<div class="dropdown-menu dropdown-country-selector" aria-labelledby="dropdownCountrySelectorMobile">
+<div class="locale-group">
+<div class="h5">North America</div>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/en-us/" data-locale="en_US" data-currencyCode="USD">
+<i class="flag-icon flag-icon-us"></i>
+&Eacute;tats-Unis | EN
+</a>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/en-ca/" data-locale="en_CA" data-currencyCode="CAD">
+<i class="flag-icon flag-icon-ca"></i>
+Canada | EN
+</a>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/fr-ca/" data-locale="fr_CA" data-currencyCode="CAD">
+<i class="flag-icon flag-icon-ca"></i>
+Canada | FR
+</a>
+</div>
+<div class="locale-group">
+<div class="h5">Europe</div>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/en-gb/" data-locale="en_GB" data-currencyCode="GBP">
+<i class="flag-icon flag-icon-gb"></i>
+Royaume Uni | EN
+</a>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/de-de/" data-locale="de_DE" data-currencyCode="EUR">
+<i class="flag-icon flag-icon-de"></i>
+Allemagne / Autriche | DE
+</a>
+<a class="dropdown-item" href="#" data-siteurl="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/Page-SetLocale" data-locale="fr_FR" data-currencyCode="EUR">
+<i class="flag-icon flag-icon-fr"></i>
+France | FR
+</a>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/it-it/" data-locale="it_IT" data-currencyCode="EUR">
+<i class="flag-icon flag-icon-it"></i>
+Italie | IT
+</a>
+</div>
+<div class="locale-group">
+<div class="h5">Asia Pacific</div>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/ja-jp/" data-locale="ja_JP" data-currencyCode="JPY">
+<i class="flag-icon flag-icon-jp"></i>
+ Japon | JA
+</a>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/en-au/" data-locale="en_AU" data-currencyCode="AUD">
+<i class="flag-icon flag-icon-au"></i>
+Australie | EN
+</a>
+<a class="dropdown-item" href="#" data-siteurl="https://www.fossil.com/en-in/" data-locale="en_IN" data-currencyCode="INR">
+<i class="flag-icon flag-icon-in"></i>
+Inde | EN
+</a>
+</div>
+</div>
+</li>
+<li class="nav-item d-lg-none nav-item-dark nav-alt" role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/orders/">
+<span class="user-message">Statut de commande</span>
+</a>
+</li>
+<li class="nav-item d-lg-none nav-item-dark nav-alt" role="menuitem">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/login/" class="nav-link">
+<span class="user-message">Se connecter</span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<div class="search-desktop-position pull-right hidden-md-down">
+<button class="search-button">
+<span class="visually-hidden">Recherche</span>
+<img class="icon search-desktop " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw23d7d93f/images/svg-icons/search-desktop.svg" alt="" width=" " height=" " />
+</button>
+<div class="search">
+<div class="site-search">
+<form role="search" action="/stam/sites/www.fossil.com/fr-fr/fr-fr/search/" method="get" name="simpleSearch" novalidate>
+<label for="search-field" class="visually-hidden">Saisir votre recherche</label>
+<input class="form-control search-field" type="search" name="q" value="" placeholder="Saisir votre recherche" autocomplete="off" aria-describedby="search-field" />
+<div class="suggestions-wrapper" data-url="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/SearchServices-GetSuggestions?q="></div>
+<input type="hidden" value="fr_FR" name="lang">
+<button class="btn btn-primary submit-search">OK</button>
+</form>
+<button class="close-search-button">
+<span class="visually-hidden">Fermer la recherche</span>
+<img class="icon close " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw67aa3341/images/svg-icons/close.svg" alt="" width=" " height=" " />
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="ml-auto d-lg-none mobile-utility">
+<div class="search-mobile d-inline pull-left">
+<button class="search-button">
+<span class="visually-hidden">Recherche</span>
+<img class="icon search-desktop " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw23d7d93f/images/svg-icons/search-desktop.svg" alt="" width=" " height=" " />
+</button>
+<div class="site-search">
+<form role="search" action="/stam/sites/www.fossil.com/fr-fr/fr-fr/search/" method="get" name="simpleSearch" novalidate>
+<label for="search-field" class="visually-hidden">Saisir votre recherche</label>
+<input class="form-control search-field" type="search" name="q" value="" placeholder="Saisir votre recherche" autocomplete="off" aria-describedby="search-field" />
+<div class="suggestions-wrapper" data-url="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/SearchServices-GetSuggestions?q="></div>
+<input type="hidden" value="fr_FR" name="lang">
+<button class="btn btn-primary submit-search">OK</button>
+</form>
+<button class="close-search-button">
+<span class="visually-hidden">Fermer la recherche</span>
+<img class="icon close " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw67aa3341/images/svg-icons/close.svg" alt="" width=" " height=" " />
+</button>
+</div>
+</div>
+<div class="minicart d-inline pull-left" data-action-url="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/Cart-MiniCartShow">
+<div class="minicart-total hide-link-med">
+<a class="minicart-link" href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/cart/" title="Afficher le panier" />
+<img class="icon bag-empty " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw075c9baf/images/svg-icons/bag-empty.svg" alt="" width=" " height=" " />
+<div class="cart-items-indicator"></div>
+<span class="visually-hidden">Number of items in your shopping bag </span>
+<span class="minicart-quantity">
+0
+</span>
+</a>
+</div>
+<div class="minicart-total hide-no-link">
+<img class="icon bag-empty " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw075c9baf/images/svg-icons/bag-empty.svg" alt="" width=" " height=" " />
+<div class="cart-items-indicator"></div>
+<span class="visually-hidden">Number of items in your shopping bag </span>
+<span class="minicart-quantity">
+0
+</span>
+</div>
+<div class="popover popover-bottom"></div>
+</div>
+<button class="navbar-toggler d-lg-none" type="button" aria-controls="sg-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+<img class="icon menu " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dwe14331c9/images/svg-icons/menu.svg" alt="" width=" " height=" " />
+<span class="visually-hidden">Menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+</div>
+<div id="main-content" role="main">
+
+<div class="home-main">
+<div class="homepage-slot">
+</div>
+<div class="homepage-slot">
+</div>
+<div class="homepage-slot">
+</div>
+<div class="homepage-slot">
+<style>
+			html, body { overflow-x: hidden; }
+			[data-crl8-container-id="custom-homepage"]{
+				display:none !important;
+			}
+
+			@media (min-width: 768px){
+				.position-md-absolute {
+					position: absolute!important;
+				}
+
+				.w-md-40 { width: 40%!important; }
+				.w-md-60 { width: 60%!important; }
+			}
+
+		    .card-container h3 > a.anchor-mask { text-decoration: none !important; }
+			.card-container h3 > a.anchor-mask::after {
+				content: '';
+		        position: absolute;
+		        left: 0;
+		        top: 0;
+		        right: 0;
+		        bottom: 0;
+    		}
+			.card-container b, p, i, small, span, strong { position: relative; }
+
+			a.btn { background-color: #fff; color: #242424; }
+			a.btn:hover { background-color: #242424; color: #fff; } 
+
+			.homepage-row1,
+			.homepage-row2,
+			.homepage-row3 {
+				margin-bottom: 5rem;
+			}
+
+			.homepage-row1 h3,
+			.homepage-row2 h3,
+			.homepage-row3 h3 {
+				font-size: 2.5rem;
+				text-transform: none;
+			}
+
+			@media (min-width: 768px){
+				.homepage-row2 h3,
+				.homepage-row3 h3 {
+					font-size: 3rem;
+				}
+			}
+			@media (min-width: 1024px){
+				.homepage-row2 h3,
+				.homepage-row3 h3 {
+					font-size: 3.5rem;
+				}
+			}
+			@media (min-width: 1200px){
+				.homepage-row2 h3,
+				.homepage-row3 h3 {
+					font-size: 4rem;
+				}
+			}
+
+			.homepage-row2,
+			.homepage-row3 { 
+				margin-left: 5vw;
+				margin-right: 5vw;
+			}
+
+			/* *** row 1 *** */
+			.homepage-row1 { position: relative; }
+
+			@media (min-width: 768px){
+				.homepage-row1 { color: #fff; }
+				.homepage-row1 h3 > a { color: #fff; }
+				.homepage-row1 h3 { font-size: 3rem; }
+				.homepage-row1 .card-body img { width: 150px; }
+			}
+
+			@media (min-width: 1024px){
+				.homepage-row1 h3 { font-size: 4rem; }
+				.homepage-row1 .card-body img { width: 250px; }
+			}
+
+			@media (min-width: 1200px){
+				.homepage-row1 h3 { font-size: 5rem; }
+			}
+
+			/* absolute position illustration */
+			.sun-illustration {
+				position: absolute;
+				top: 94vw;
+				right: 4vw;
+				width: 25vw;
+			}
+			@media (min-width: 768px){
+				.sun-illustration {
+					top: inherit;
+					bottom: -6.5vw;
+					right: 4vw;
+					width: 16vw;
+				}
+			}
+
+
+
+			/* *** row 2 *** */
+			.homepage-row2 > :only-child > :nth-child(2) > :only-child > :only-child { width: 100%; }
+			
+			@media (min-width: 768px){
+				.homepage-row2 > :only-child > :nth-child(2) { padding-top: 12vw; }
+				.homepage-row2 > :only-child > :nth-child(2) > :only-child > :only-child { width: 250px; }
+			}
+
+			@media (min-width: 1024px){
+				.homepage-row2 > :only-child > :nth-child(2) > :only-child > :only-child {
+					width: 300px;
+				}
+			}
+
+			@media (min-width: 1200px){
+				.homepage-row2 > :only-child > :nth-child(2) > :only-child > :only-child {
+					width: 350px;
+				}
+			}
+
+
+
+			/* *** row 3 *** */
+			.homepage-row3 { position: relative; }
+			.homepage-row3 > :only-child > :nth-child(2) > :nth-child(1) > :only-child { width: 100%; }
+			
+			@media (min-width: 768px){
+				.homepage-row3 > :only-child > :nth-child(1) { padding-top: 7vw; }
+				.homepage-row3 > :only-child > :nth-child(2) > :nth-child(1) > :only-child { width: 300px; }
+			}
+
+			@media (min-width: 1024px){
+				.homepage-row3 > :only-child > :nth-child(2) > :nth-child(1) > :only-child {
+					width: 350px;
+				}
+			}
+
+			@media (min-width: 1200px){
+				.homepage-row3 > :only-child > :nth-child(2) > :nth-child(1) > :only-child {
+					width: 400px;
+				}
+			}
+
+			/* absolute position illustration */
+			.tree-illustration {
+				position: absolute;
+				top: -26vw;
+				right: 0;
+				width: 23vw;
+			}
+			@media (min-width: 768px){
+				.tree-illustration {
+					display: none;
+				}
+			}
+
+
+
+			/* *** row 4 (apac) *** */
+			.homepage-row4-apac h3 {
+				font-size: 2.5rem;
+				text-transform: none;
+			}
+			.homepage-row4-apac > :only-child > :nth-child(2){ margin-left: 5vw; margin-right: 5vw; }
+			.homepage-row4-apac > :only-child > :nth-child(2) img:nth-of-type(1) { width: 225px; }
+
+			@media (min-width: 768px){
+				.homepage-row4-apac h3 { font-size: 3rem; }
+				.homepage-row4-apac > :only-child { margin-left: 5vw; margin-right: 5vw; }
+				.homepage-row4-apac > :only-child > :nth-child(2){ margin-left: 0; margin-right: 0; }
+				.homepage-row4-apac > :only-child > :nth-child(2) img:nth-of-type(1) { width: 200px; }
+				.homepage-row4-apac > :only-child > :nth-child(2) img:nth-of-type(2) { width: 150px; }
+			}
+			@media (min-width: 1024px){
+				.homepage-row4-apac h3 {
+					font-size: 3.5rem;
+				}
+			}
+			@media (min-width: 1200px){
+				.homepage-row4-apac h3 {
+					font-size: 4rem;
+				}
+			}
+
+			.homepage-row4-apac > :only-child > :nth-child(2){ 
+				margin-left: 5vw;
+				margin-right: 5vw;
+			}
+
+			.homepage-row4-apac {
+				margin-top: 12vw;
+				margin-bottom: 5rem;
+			}
+
+
+
+			/* *** row 4 (emea) *** */
+			.homepage-row4-emea h3 {
+				font-size: 2rem;
+				text-transform: none;
+			}
+			.homepage-row4-emea > :only-child > :nth-child(2){ margin-left: 5vw; margin-right: 5vw; }
+			.homepage-row4-emea > :only-child > :nth-child(2) img:nth-of-type(1) { width: 225px; }
+
+			@media (min-width: 768px){
+				.homepage-row4-emea h3 { font-size: 1.5rem; }
+				.homepage-row4-emea > :only-child { margin-left: 5vw; margin-right: 5vw; }
+				.homepage-row4-emea > :only-child > :nth-child(2){ margin-left: 0; margin-right: 0; }
+				.homepage-row4-emea > :only-child > :nth-child(2) img:nth-of-type(1) { width: 200px; }
+				.homepage-row4-emea > :only-child > :nth-child(2) img:nth-of-type(2) { width: 150px; }
+			}
+			@media (min-width: 1024px){
+				.homepage-row4-emea h3 {
+					font-size: 2rem;
+				}
+			}
+			@media (min-width: 1200px){
+				.homepage-row4-emea h3 {
+					font-size: 2.75rem;
+				}
+			}
+
+			.homepage-row4-emea > :only-child > :nth-child(2){ 
+				margin-left: 5vw;
+				margin-right: 5vw;
+			}
+
+			.homepage-row4-emea {
+				margin-top: 12vw;
+				margin-bottom: 5rem;
+			}
+
+
+
+			/* *** row 5 (emea) *** */
+			.homepage-row5-emea {
+				margin-top: 12vw;
+				margin-left: 5vw;
+				margin-right: 5vw;
+			}
+
+			.homepage-row5-emea > :only-child > :nth-child(1) > :only-child {
+				background-color: #71A087;
+				border-bottom-left-radius: 30px;
+				border-bottom-right-radius: 30px; 
+			}
+
+			@media (min-width: 768px){
+				.homepage-row5-emea > :only-child > :nth-child(1) > :only-child {
+					border-top-left-radius: 30px;
+					border-bottom-left-radius: 30px;
+					border-bottom-right-radius: 0; 
+				}
+			}
+
+			.homepage-row5-emea h3 {
+				font-size: 2rem;
+				text-transform: none;
+			}
+
+			@media (min-width: 768px){
+				.homepage-row5-emea h3 {
+					font-size: 1.5rem;
+				}
+			}
+			@media (min-width: 1024px){
+				.homepage-row5-emea h3 {
+					font-size: 2rem;
+				}
+			}
+			@media (min-width: 1200px){
+				.homepage-row5-emea h3 {
+					font-size: 2.75rem;
+				}
+			}
+		</style>
+<div class="homepage-row1">
+<div class="card-container mb-5">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-homme/">
+<picture>
+<source srcset="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw77680d8e/2021/SP21/set_0215/hp/0215_Homepage_Hero1_Desktop_GLOBAL_X3.png" media="(min-width: 1930px)" type="image/svg+xml">
+<source srcset="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw65eee2ff/2021/SP21/set_0215/hp/0215_Homepage_Hero1_Desktop_GLOBAL_X2.png" media="(min-width: 768px)" type="image/svg+xml">
+<img class="card-img" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw54ece6ac/2021/SP21/set_0215/hp/0215_Homepage_Hero1_V2_Mobile_GLOBAL_X3.png" alt="Image Bonjour de Palm Springs en Californie et homme portant une montre en acier inoxydable.">
+</picture>
+</a>
+<div class="card-body card-img-overlay position-relative position-md-absolute">
+<div class="d-flex h-100 w-100">
+<div class="w-100">
+<div class="d-flex align-items-center justify-content-md-center h-100 w-100">
+<div class="text-md-center mt-5 mt-md-0 ml-2 ml-md-0">
+<img class="d-none d-md-block mx-auto" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw88d17c62/2021/SP21/set_0215/hp/0215_Homepage_Hero1_Palm Springs_Mobile_GLOBAL_X3.png" alt="BONJOUR DE Palm Springs en Californie">
+<h3>
+<span class="d-md-none">Découvrez Everett</span>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-homme/" class="anchor-mask d-none d-md-block mt-md-2">Découvrez Everett</a>
+</h3>
+<p>
+Sportive. Élégante. Et indéniablement tendance.<br />
+Everett attire l’attention de tous.
+</p>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-homme/" class="btn btn-primary rounded-pill font-weight-bold position-relative">DÉMARRER LE SHOPPING</a>
+</div>
+</div>
+</div>
+<div class="d-none d-md-block w-100"></div>
+</div>
+</div>
+</div>
+
+<img class="sun-illustration" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw4e41a965/2021/SP21/set_0215/hp/0215_Homepage_Hero1_GoodVibes_Desktop_GLOBAL_X3.png" alt="DE BONNES ONDES">
+</div>
+<div class="homepage-row2">
+<div class="d-flex flex-column flex-md-row h-100 w-100">
+<div class="w-100">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/">
+
+<video class="w-100" autoplay muted loop playsinline>
+<source src="https://fossil.scene7.com/is/content/FossilPartners/bgvideos/Fossil/fsl_0215_Homepage_Card2_Desktop_GLOBAL_video-med.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</a>
+</div>
+<div class="w-100">
+<div class="d-flex align-items-center justify-content-center h-100 w-100">
+<div class="ml-2 ml-md-0 mx-md-5">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/">
+<picture>
+<source srcset="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw81dac679/2021/SP21/set_0215/hp/0215_Homepage_Card3_Desktop_GLOBAL_X3.png" media="(min-width: 1930px)" type="image/svg+xml">
+<img class="d-none d-md-block card-img mb-2" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw3d627e8a/2021/SP21/set_0215/hp/0215_Homepage_Card3_Desktop_GLOBAL_X2.png" alt="Montre Gabby doré rose.">
+</picture>
+</a>
+<h3>
+Découvrez<br />
+Gabby
+</h3>
+<p>
+Elle est arrivée. Arborant un élégant boîtier légèrement arrondi<br class="d-none d-sm-block d-md-none" />
+et un bracelet à maillons en H emblématique, la montre<br class="d-none d-sm-block d-md-none" />
+Gabby redéfinit une nouvelle norme en matière de style.
+</p>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres/montres-pour-femme/" class="btn btn-primary rounded-pill font-weight-bold">DÉMARRER LE SHOPPING</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="homepage-row3">
+<div class="d-flex flex-column flex-md-row h-100 w-100">
+<div class="order-1 order-md-2 w-100">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-a-main-pour-femme/">
+<picture>
+<source srcset="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwd53c5c2b/2021/SP21/set_0215/hp/0215_Homepage_Card5_Desktop_GLOBAL_X3.png" media="(min-width: 1930px)" type="image/svg+xml">
+<source srcset="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwda6f282c/2021/SP21/set_0215/hp/0215_Homepage_Card5_Desktop_GLOBAL_X2.png" media="(min-width: 768px)" type="image/svg+xml">
+<img class="card-img mb-4 mb-md-0" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw5e8241d5/2021/SP21/set_0215/hp/0215_Homepage_Hero3_Mobile_GLOBAL_X3.png" alt="Deux sacs Jolie en cuir brun.">
+</picture>
+</a>
+</div>
+<div class="order-2 order-md-1 w-100">
+<div class="d-flex align-items-center justify-content-center h-100 w-100">
+<div class="ml-2 ml-md-0 mx-md-5">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-a-main-pour-femme/">
+<picture>
+<source srcset="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwf24888b9/2021/SP21/set_0215/hp/0215_Homepage_Card4_Desktop_GLOBAL_X3.png" media="(min-width: 1930px)" type="image/svg+xml">
+<img class="d-none d-md-block card-img mb-2" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw6eaa86b2/2021/SP21/set_0215/hp/0215_Homepage_Card4_Desktop_GLOBAL_X2.png" alt="Femme avec un sac Jolie en cuir brun. ">
+</picture>
+</a>
+<h3>
+Restons ici<br />
+un moment
+</h3>
+<p>Le nouveau modèle incontournable. Disponible en deux tailles.<br class="d-none d-sm-block d-md-none" /> Jolie est le sac idéal au quotidien.</p>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/sacs/sacs-a-main-pour-femme/" class="btn btn-primary rounded-pill font-weight-bold">DÉMARRER LE SHOPPING</a>
+</div>
+</div>
+
+<img class="tree-illustration" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw9736aa06/2021/SP21/set_0215/hp/0215_Homepage_Card5_PSCA_Mobile_GLOBAL_X3.png" alt="Palm Springs en Californie">
+</div>
+</div>
+</div>
+<div class="homepage-row4-emea">
+<div class="d-flex flex-column flex-md-row h-100 w-100">
+<div class="w-100">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres-connectees/generations/gen-5e/">
+<picture>
+<source srcset="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw2a4aa9ab/2021/SP21/set_0215/hp/0215_Homepage_Card6_GIF_Desktop_EMEA_X3.gif" media="(min-width: 1930px)" type="image/svg+xml">
+<source srcset="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw56210aa6/2021/SP21/set_0215/hp/0215_Homepage_Card6_GIF_Desktop_EMEA_X2.gif" media="(min-width: 768px)" type="image/svg+xml">
+<img class="card-img mb-4 mb-md-0" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwdf872086/2021/SP21/set_0215/hp/0215_Homepage_Card6_Mobile_EMEA_X3.gif" alt="Gif de montres connectées 5ème génération E en acier inoxydable et silicone noir. ">
+</picture>
+</a>
+</div>
+<div class="w-100">
+<div class="d-flex align-items-end justify-content-md-center h-100 w-100 pb-md-5">
+<div class="ml-2 ml-md-0 mx-md-5 pb-md-5">
+<h3>
+Découvrez la<br class="d-none d-sm-block" /> montre connectée<br class="d-none d-sm-block" /> 5ÈME GÉNÉRATION E
+</h3>
+<p>
+Des options de modèles plus petits<br class="d-lg-none" />
+avec un prix réduit assorti.
+</p>
+<div class="mb-3">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres-connectees/generations/gen-5e/" class="btn btn-primary rounded-pill font-weight-bold mb-1 mb-sm-0 mr-1 mb-md-1">DÉCOUVRIR MAINTENANT</a>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/montres-connectees/decouvrir/gen-5e/" class="btn btn-primary rounded-pill font-weight-bold mb-1 mb-sm-0">EN SAVOIR PLUS</a>
+</div>
+<img class="card-img mb-2 mb-lg-0 mr-md-3" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwe10e07cd/2021/SP21/set_0215/hp/Google_WearOS_X3.png" alt="Logo de Wear OS by Google">
+<br class="d-none d-md-block d-lg-none" />
+<br class="d-none d-md-block d-lg-none" />
+<img class="d-none d-md-inline-block card-img mb-4 mb-md-0" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwa38918e8/2021/SP21/set_0215/hp/Compatibility_Iphone_Android_Logo_Gray_secondary_X3.png" alt="[Compatible avec iPhone® et Android™.]">
+<p class="d-md-none"><small>Compatible avec iPhone® et Android™.</small></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="homepage-row5-emea">
+<div class="d-flex flex-column flex-md-row h-100 w-100">
+<div class="order-2 order-md-1 w-100 w-md-40 py-md-2 py-lg-3 py-xl-5">
+<div class="h-100 w-100">
+<div class="d-flex align-items-end justify-content-md-center text-white h-100 w-100 pb-md-2 pb-xl-5">
+<div class="ml-5 ml-md-0 mx-md-3 mx-lg-5 pb-md-1 pb-xl-5 py-5 py-md-0">
+<h3>
+Nouveau !<br />
+Perles<br />
+de bien-être
+</h3>
+<p class="mr-3 mr-sm-5 mr-md-0">
+Attirez l’énergie positive et la chance<br class="d-none d-sm-block d-md-none d-lg-block" />
+avec quelques-unes de nos pierres préférées pleines de signification.
+</p>
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/bijoux/bijoux-femme/" class="btn btn-primary rounded-pill font-weight-bold mb-1 mb-sm-0 mb-lg-1 mb-xl-0">VOIR LES BIJOUX</a>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 order-md-2 w-100 w-md-60">
+<a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/bijoux/bijoux-femme/">
+<picture>
+<source srcset="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwc83d877c/2021/SP21/set_0215/hp/0215_Homepage_Hero7_Desktop_EMEA_X3.png" media="(min-width: 1930px)" type="image/svg+xml">
+<source srcset="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw4395d18d/2021/SP21/set_0215/hp/0215_Homepage_Hero7_Desktop_EMEA_X2.png" media="(min-width: 768px)" type="image/svg+xml">
+<img class="card-img" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwdc121a6f/2021/SP21/set_0215/hp/0215_Homepage_Hero7_Mobile_EMEA_X3.png" alt="Cinq colliers avec perles de bien-être sur un fond beige. ">
+</picture>
+</a>
+</div>
+</div>
+</div>
+<div class="homepage-row4">
+<div class="container">
+<p class="text-center mb-3 mt-5">
+Wear OS by Google fonctionne sur les téléphones équipés de la dernière version d'Android (à l'exception de l'édition Go et des téléphones ne disposant pas du Google Play Store) ou d'iOS. Les fonctionnalités compatibles peuvent varier selon les plates-formes et les pays, et les conditions de compatibilité sont susceptibles d'évoluer.
+</p>
+</div>
+</div>
+</div>
+<div class="homepage-slot">
+</div>
+<div class="homepage-slot">
+</div>
+<div class="homepage-slot">
+</div>
+</div>
+
+<div data-crl8-container-id="custom-homepage" data-crl8-locale="fr-FR"></div>
+
+<div class="seo-content-slot container-fluid">
+<div class="mb-9"></div>
+<div class="border-top mb-1"></div>
+<h2>DÉCOUVREZ​ LES MONTRES, LES SACS ET DE NOMBREUX AUTRES PRODUITS FOSSIL</h2>
+<p>Fossil est une marque américaine de montres et d’accessoires de mode inspirée par le style vintage authentique et le design classique. Depuis 1984, nous nous efforçons de créer des montres, des sacs et d'autres accessoires de qualité qui célèbrent le meilleur du passé tout en s'adaptant aux goûts et aux besoins des consommateurs d'aujourd'hui. Pour célébrer nos 30 ans d'héritage vintage, nous laissons place à notre passion de la liberté et de l'aventure en explorant les possibilités infinies qu'offre la vie sur la route. Peu importe ce qui vous attend, un voyage autour du monde ou simplement votre trajet quotidien, nous avons conçu avec soin de superbes montres et accessoires qui vous suivront partout. Que se passe-t-il lorsque les lignes épurées du milieu du siècle rencontrent la modernité du design actuel ? On obtient des produits phares qui incarnent ce que nous faisons de mieux : des sacs à la fois pratiques et beaux, des montres classiques aux couleurs vives et aux matériaux innovants, des vêtements et accessoires qui vous accompagnent tout au long de vos voyages.</p>
+<div id="accordion">
+<div class="card mb-0">
+<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+<div class="card-body pl-0 ml-0">
+<p>Fossil est une marque américaine de montres et d’accessoires de mode inspirée par le style vintage authentique et le design classique. Depuis 1984, nous nous efforçons de créer des montres, des sacs et d'autres accessoires de qualité qui célèbrent le meilleur du passé tout en s'adaptant aux goûts et aux besoins des consommateurs d'aujourd'hui. Pour célébrer nos 30 ans d'héritage vintage, nous laissons place à notre passion de la liberté et de l'aventure en explorant les possibilités infinies qu'offre la vie sur la route. Peu importe ce qui vous attend, un voyage autour du monde ou simplement votre trajet quotidien, nous avons conçu avec soin de superbes montres et accessoires qui vous suivront partout. Que se passe-t-il lorsque les lignes épurées du milieu du siècle rencontrent la modernité du design actuel ? On obtient des produits phares qui incarnent ce que nous faisons de mieux : des sacs à la fois pratiques et beaux, des montres classiques aux couleurs vives et aux matériaux innovants, des vêtements et accessoires qui vous accompagnent tout au long de vos voyages.</p>
+<p>Nos montres pour homme et femme se déclinent sur d'élégants bracelets en cuir ou en acier et nos sacs incontournables mêlent tendance et praticité. Nos favoris de la saison ? Nos superbes montres doré rose pour Elle et nos montres suisses d'exception pour Lui, qui disposent de toutes les qualités propres à un classique Fossil. Portez-les avec nos ravissants bracelets manchettes, nos boucles d'oreilles scintillantes et nos colliers glamour pour créer un look parfait, de jour comme de nuit.</p>
+<p>Conçus pour se magnifier au fur et à mesure des années, nos superbes sacs sont dotés d'un format pratique et de matières résistantes, vous permettant de transporter votre tablette, votre portable, vos documents et toutes vos affaires indispensables en toute élégance. Le cuir qui les compose se décline dans une palette de couleurs vives et de nuances neutres qui capturent la richesse de chaque saison tout en soulignant les lignes sobres et épurées de nos plus beaux modèles. Nos étuis pour tablette, nos coques pour téléphone et nos ceintures sont autant d'accessoires ludiques et pratiques qui vous accompagneront pendant de nombreuses années.</p>
+</div>
+</div>
+<div class="card-header pl-0" id="headingOne">
+<h5 class="mb-0">
+<button class="btn btn-link collapsed pl-0" data-toggle="collapse" data-target="#collapseOne" data-text-more="En savoir plus" data-text-less="Read Less" aria-expanded="false" aria-controls="collapseOne">
+En savoir plus
+</button>
+</h5>
+</div>
+</div>
+</div>
+</div>
+<span class="api-true  email-signup-modal" data-caOnline="true" data-url="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/EmailSignUp-GetContent?cid=email_sign_up_modal" data-continue-url="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/EmailSignUp-RemoveSignUpModal">
+</span>
+</div>
+<footer class="referafriendUrl" role="contentinfo">
+<div class="container">
+<div class="footer-container row">
+<div class="footer-item col-lg-4 col-md-4 col-sm-12 store">
+<div class="content-asset">
+<h3 class="h2">Restez connectés</h3>
+<form autocomplete="on" method="POST" action="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/MCSubscription-SubmitFooter" class="newsletterSubscribe" name="dwfrm_mcsubscribe">
+<div class="form-group 
+        required">
+<label class="visually-hidden" for="footer-email-signup">S&rsquo;inscrire aux mises &agrave; jour par e-mail</label>
+<input aria-describedby="footer-email-signup" aria-required="true" class="email required" id="footer-email-signup" name='dwfrm_mcsubscribe_email' placeholder="Saisissez votre adresse e-mail" type="email" value="">
+<button class="" name="footer-email" type="submit" value="Submit">
+<span class="visually-hidden">Inscription</span>
+<img class="icon right-arrow-footer " src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/default/dw02d2142c/images/svg-icons/right-arrow-footer.svg" alt="" width=" " height=" " />
+</button>
+<input type="hidden" name="csrf_token" value="Uc9ZinMXOxFBf8EvqmWToXerNjDS_iNAq4H37G0GJMaXHcfSkHO6X_Q_B04JgeaGs6wtnCIB6SY7NUIwbz3LZ2oVxD1jtonNs2Ncy5DEoEmXnJBIyPdEqHT5xAXt5WugpevtN4r6Xp6_Nl3DkGjGtWzIq01ZL2-GXe7LkwuUT39MNrLlBJ4=" />
+<div class="invalid-feedback"></div>
+</div>
+</form>
+<p>En souscrivant à notre newsletter, vous acceptez notre Politique de Confidentialité. Des restrictions et exclusions s'appliquent.</p>
+<ul class="social-links">
+<li><a href="https://www.facebook.com/fossil" target="_blank"><span class="visually-hidden">Facebook</span><img alt="" aria-hidden="true" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw9fe520d4/images/facebook.svg" /></a></li>
+<li><a href="https://www.twitter.com/fossil" target="_blank"><span class="visually-hidden">Twitter</span><img alt="" aria-hidden="true" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwf5b36d9f/images/twitter.svg" /></a></li>
+<li><a href="https://www.pinterest.com/fossil" target="_blank"><span class="visually-hidden">Pinterest</span><img alt="" aria-hidden="true" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw3d921f51/images/pinterest.svg" /></a></li>
+<li><a href="https://www.instagram.com/fossil" target="_blank"><span class="visually-hidden">Instagram</span><img alt="" aria-hidden="true" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw24011f77/images/instagram.svg" /></a></li>
+<li><a href="https://www.youtube.com/fossil" target="_blank"><span class="visually-hidden">YouTube</span><img alt="" aria-hidden="true" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwfeac9040/images/you-tube.svg" width="20px" /></a></li>
+</ul>
+</div> 
+</div>
+<div class="footer-item col-lg-3 col-md-4 collapsible-sm">
+<div class="content-asset">
+<h3 class="title">DECOUVRIR</h3>
+<ul class="menu-footer content">
+<li><a href="https://www.fossilgroup.com/" target="_blank">À propos du Groupe Fossil</a></li>
+<li><a href="https://www.fossilgroup.com/brands/" target="_blank">À propos de nous</a></li>
+<li><a href="https://www.fossilfoundation.org/" target="_blank">Fondation Fossil</a></li>
+<li><a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/make-time-for-good/">Make Time For Good</a></li>
+<li><a href="https://www.fossilgroup.com/responsibility/regulatory-compliance/" target="_blank">Conformité législative</a></li>
+<li><a href="https://www.fossilgroup.com/careers/" target="_blank">Emploi</a></li>
+<li><a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/store-locator.html">Points de vente</a></li>
+</ul>
+</div> 
+</div>
+<div class="footer-item col-lg-3 col-md-4 collapsible-sm">
+<div class="content-asset">
+<h3 class="title">SERVICE CLIENT</h3>
+<ul class="menu-footer content">
+<li><a href="https://support.fossil.com/hc/fr" target="_blank">FAQ</a></li>
+<li><a href="https://support.fossil.com/hc/fr/articles/360026193071-FR-EXPÉDITION-DE-VOTRE-COMMANDE " target="_blank">Conditions de livraison</a></li>
+<li><a href="https://support.fossil.com/hc/fr/articles/115005671166-RETOURS-ET-%C3%89CHANGES" target="_blank">Retours</a></li>
+<li><a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/login/">Statut de la commande</a></li>
+<li><a href="https://support.fossil.com/hc/fr/categories/360000090243-Garantie-et-r%C3%A9parations" target="_blank">Garantie et réparations</a></li>
+<li><a href="https://support.fossil.com/hc/fr/articles/360026104732-MODE-D-EMPLOI-DES-MONTRES" target="_blank">Modes d’emploi</a></li>
+<li><a href="https://support.fossil.com/hc/fr/articles/360001491386-SERVICE-DE-REMPLACEMENT-DE-LA-PILE">Service de remplacement de la pile</a></li>
+<li><a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/registrations/">Enregistrer un produit</a></li>
+<li><a href="https://orgranit.github.io/stam/sites/www.fossil.com/fr-fr/cadeaux/service-cadeaux/">Service cadeaux</a></li>
+</ul>
+</div> 
+</div>
+<div class="footer-item col-lg-2 col-md-4 offset-lg-0 offset-md-8">
+<div class="content-asset">
+<h3 class="title">NOUS CONTACTER</a></h3>
+<ul>
+<li><img alt="" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw986ec8ff/images/mail.svg" /><a href="https://support.fossil.com/hc/fr/requests/new" target="_blank"> Envoyer une demande</a></li>
+
+<li><img alt="" src="https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dwdf7355b2/images/phone.svg" /> <a href="tel:33184889325"> France<br>Tel: +33 184889325 </a><br>Du lundi au vendredi<br>de 9h à 17h</li>
+<li><b><u><a href="#" onclick="openCC(125260, 2);return false" target="_blank">RETOUR D'INFORMATION</a></b></u></li>
+</ul>
+<script>
+function openCC(id, lang) {
+    
+    w = 700;
+    h = 676;
+    l = (screen.width / 2) - (w / 2);
+    t = (screen.width / 2) - (h / 2);
+
+    var features = "width=" + w + ",height=" + h + ", left=" + l + ", top=" + t + ", resizable=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, copyhistory=no";
+
+    window.open(window.location.protocol + "//ips-invite.iperceptions.com/webValidator.aspx?sdfc=355b766d-" + id + "-c733c77b-141a-42d7-be9f-2e52b426622b&lID=" + lang + "&destination=commentcard&source=91787&referrer=" + encodeURIComponent(window.location.href), "Feedback", features);
+}
+</script>
+</div> 
+</div>
+</div>
+<div class="row">
+<div class="col-lg-4 col-sm-5 push-sm-7 push-lg-8 social">
+<button class="back-to-top" title="Haut de page"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+</div>
+</div>
+</div>
+</footer>
+<div class="col-12 copyright-notice">
+<div class="container">
+<div class="row">
+<div class="content-asset">
+
+<ul>
+<li>&copy;2020 FOSSIL GROUP, INC.</li>
+<li><a href="https://support.fossil.com/hc/fr/articles/360026198311-CONDITIONS-G%C3%89N%C3%89RALES-DE-VENTE" target="_blank">CGV</a></li>
+<li><a href="https://support.fossil.com/hc/fr/articles/360026199151-WEBSITE-PRIVACY-AND-SECURITY" target="_blank">SÉCURITÉ ET CONFIDENTIALITÉ</a></li>
+<li><a href="https://support.fossil.com/hc/fr/articles/360036856974-Politique-concernant-les-cookies" target="_blank">POLITIQUE CONCERNANT LES COOKIES</a></li>
+<li><a href="https://support.fossil.com/hc/fr/articles/360025897792-D%C3%89CLARATION-D-ACCESSIBILIT%C3%89-DU-SITE-WEB-DU-GROUPE-FOSSIL">DÉCLARATION D'ACCESSIBILITÉ</a></li>
+</ul>
+
+</div> 
+</div>
+</div>
+</div>
+<script>pageContext = {"title":"Home","type":"Home","ns":"home"};</script>
+</div>
+<div class="error-messaging"></div>
+<div class="modal-background"></div>
+<!--[if lt IE 10]>
+<script>//common/scripts.isml</script>
+<script defer type="text/javascript" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/js/main.js"></script>
+
+
+<script defer type="text/javascript" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/lib/jquery.zoom.min.js"></script>
+
+
+    <script defer type="text/javascript" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/js/productTile.js"></script>
+
+
+
+<![endif]-->
+<script src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/custom/cybersource-custom.js"></script>
+<span class="api-true  tracking-consent" data-caOnline="true" data-url="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/ConsentTracking-GetContent?cid=tracking_hint" data-reject="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/ConsentTracking-SetSession?consent=false" data-accept="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/ConsentTracking-SetSession?consent=true" data-acceptText="Ok" data-rejectText="Non" data-heading="Consentement aux cookies" data-cookieinit="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/Page-CookiePolicyInit" data-cookieaccept="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/Page-CookiePolicyAccept" data-csrfname="csrf_token" data-csrftoken="jxsYoECco4iseSZgSMuMCdI2lzVgWFPu_jvOLEu4e9GeZzZBjyh7V6aV7JF0cZJx5WhEsxI0gr2TBaMUxexQYAjMa7rxVwNdEl8oDkCywCS4DJpw7azkio4drrX_gK-EXl0krh8nIIHM2-fKjfLIUt-oIRG-hYvhlhjftaXyXrf8Shk6O60="></span>
+<input type='hidden' id="currentBrowserTime" value="/stam/sites/www.fossil.com/fr-fr/on/demandware.store/Sites-fossil-fr-Site/fr_FR/Session-SetCurrentTime" />
+
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+function trackPage() {
+    try{
+        var trackingUrl = "https://www.fossil.com/on/demandware.store/Sites-fossil-fr-Site/fr_FR/__Analytics-Start";
+        var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
+        if (typeof dw.ac == "undefined") {
+            dwAnalytics.trackPageView();
+        } else {
+            dw.ac.setDWAnalytics(dwAnalytics);
+        }
+    }catch(err) {};
+}
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript" src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/internal/jscript/dwanalytics-20.5.1.js" async="async" onload="trackPage()"></script>
+
+<script src="/stam/sites/www.fossil.com/fr-fr/on/demandware.static/Sites-fossil-fr-Site/-/fr_FR/v1613693384181/internal/jscript/dwac-20.3.js" type="text/javascript" async="async"></script>
+<script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
+<script type="text/javascript" >var _cf = _cf || []; _cf.push(['_setFsp', true]);  _cf.push(['_setBm', true]);  _cf.push(['_setAu', '/webcontent/716d90d7ui1991f9d151798e1b2b81']); </script><script type="text/javascript"  src="/stam/sites/www.fossil.com/fr-fr/webcontent/716d90d7ui1991f9d151798e1b2b81"></script></body>
+</html>

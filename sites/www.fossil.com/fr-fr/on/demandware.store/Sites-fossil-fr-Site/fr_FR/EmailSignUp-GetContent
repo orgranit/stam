@@ -1,0 +1,53 @@
+
+<div class="content-asset">
+<style>
+    .modal-bg {
+        background-color: #BDE1ED;
+    }
+
+    .text-red {
+        color: #D64826;
+    }
+
+    .text-thick{
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    .text-header {
+        font-size: 26px;
+    }
+</style>
+<div class="email-signup-container">
+<div class="email-signup-header text-center">
+<h3>PROFITEZ DE 15 % DE REMISE IMMÉDIATE* (EN VOUS INSCRIVANT)</h3>
+</div>
+<div class="card-body">
+<p class="text-center email-signup-intro-message">Nous pouvons devenir bons amis en seulement quelques clics et partager les dernières nouveautés de la saison, les prochaines promotions et les offres spéciales à venir.</p>
+</div>
+
+<div class="d-block w-100 mb-3"></div>
+<div class="text-center">
+<form autocomplete="on" method="POST" action="/on/demandware.store/Sites-fossil-fr-Site/fr_FR/MCSubscription-SubmitFooter" class="newsletterSubscribe" name="dwfrm_mcsubscribe">
+<div class="form-group 
+        required">
+<label class="visually-hidden" for="dwfrm_mcsubscribe_email">S&rsquo;inscrire aux mises &agrave; jour par e-mail</label>
+<input aria-describedby="email-signup-field" aria-required="true"
+        lass="email required" id="email-signup-field" name='dwfrm_mcsubscribe_email' placeholder="Saisissez votre adresse e-mail" type="email" value="">
+<input type="hidden" name="csrf_token" value="7GKxhYwX8QEPPe_VKlxHddgJRCnW2ZxD_-o-cxYAQyiR944i3g1kDOl2lBmJSeYREUSWggMELFNjtYhc-54p2KPFbuZhSCwFqtO_LWMRMlzPIYIkM8vlcF-amYti5iuuTzAxAi4zKYc1Pbxnu9r584-n-kIHvvmfOyTuodlGFaqUmgx2zCw="/>
+<div class="invalid-feedback"></div>
+</div>
+<div class="email-signup-terms-agreement">
+<iscontentasset aid="email-signup-terms-agreement">
+</div>
+<button class="btn btn-primary email-signup-modal-button" name="footer-email" type="submit" value="Submit"> Inscription </button>
+</form>
+</div>
+</div>
+<div class="mt-3">
+<div class="content-asset">
+
+<p class="text-center"><a href="https://www.fossil.com/fr-fr/promos/">*Certaines exclusions s&rsquo;appliquent.</a> Vous pouvez consulter &agrave; tout moment notre <a href="https://support.fossil.com/hc/fr/articles/360026199151-POLITIQUE-DE-CONFIDENTIALIT%C3%89">Politique de Confidentialit&eacute;</a> pour en savoir plus sur l&rsquo;usage de vos donn&eacute;es personnelles.</p>
+</div> 
+</div>
+</div> 
