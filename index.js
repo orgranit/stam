@@ -7,6 +7,7 @@ const critical = require('critical');
 
 (async () => {
     const siteName = 'kre8.tv'
+    const dirPath = './sites/kre8.tv'
     const siteUrl = `https://${siteName}/`
     const stam = require("@wix/puppeteer-interception-pipeline")
     const InterceptionPipeline = stam.InterceptionPipeline
@@ -22,9 +23,7 @@ const critical = require('critical');
                 const isRoot = url === siteUrl
                 const file = isRoot ?  'index.html' : url.replace(siteUrl, '')
                 const body = await response.readBody()
-                const bodyFixed = isRoot ? new TextDecoder("utf-8").decode(body).split('="/').join(`="/sites/${siteName}/`) : body
-                debugger
-                fse.outputFile(`./sites/${siteName}/${file}`, bodyFixed, function (err) {
+                fse.outputFile(`${dirPath}/${file}`, body, function (err) {
                     if (err) {
                         return console.log(err);
                     }
@@ -77,21 +76,24 @@ const critical = require('critical');
     // });
 
     await browser.close();
-})
-
-critical.generate({
-    base: './',
-    src: './sites/kre8.tv/index.html',
-    target: './sites/kre8.tv/optimized.html',
-    inline: true,
-    dimensions: [
-        {
-            height: 500,
-            width: 300,
-        },
-        {
-            height: 720,
-            width: 1280,
-        },
-    ]
-});
+    const src =  `${dirPath}/index.html`
+    const target =  `${dirPath}/optimized.html`
+    critical.generate({
+        base: './',
+        src,
+        target,
+        inline: true,
+        dimensions: [
+            {
+                height: 500,
+                width: 300,
+            },
+            {
+                height: 720,
+                width: 1280,
+            },
+        ]
+    });
+    fse.outputFile(src, fse.readFileSync(src, 'utf-8').split('="/').join(`="/stam/sites/${siteName}/`))
+    fse.outputFile(target, fse.readFileSync(target, 'utf-8').split('="/').join(`="/stam/sites/${siteName}/`))
+})()
