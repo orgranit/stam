@@ -30,6 +30,7 @@ const main = async (siteName) => {
         async responseHandler({ response, request }) {
             const {url} = request
             const isRoot = url === siteUrl
+            debugger
             const file = isRoot ?  'index.html' : url.replace(siteUrl, '').split('?')[0]
             const body = await response.readBody()
             fse.outputFile(`${dirPath}/${file}`, body, function (err) {
@@ -111,4 +112,4 @@ const main = async (siteName) => {
     handleCORS(`${dirPath}/${target}`)
 }
 
-main('www.etsy.com')
+main('www.ynet.co.il')
