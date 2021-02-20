@@ -31,7 +31,7 @@ const critical = require('critical');
                 });
             }
 
-            return body
+            return {body}
 
         },
     });
@@ -76,10 +76,10 @@ const critical = require('critical');
     // });
 
     await browser.close();
-    const src =  `${dirPath}/index.html`
-    const target =  `${dirPath}/optimized.html`
-    critical.generate({
-        base: './',
+    const src =  `index.html`
+    const target =  `optimized.html`
+    await critical.generate({
+        base: './sites/kre8.tv/',
         src,
         target,
         inline: true,
@@ -94,6 +94,6 @@ const critical = require('critical');
             },
         ]
     });
-    fse.outputFile(src, fse.readFileSync(src, 'utf-8').split('="/').join(`="/stam/sites/${siteName}/`))
-    fse.outputFile(target, fse.readFileSync(target, 'utf-8').split('="/').join(`="/stam/sites/${siteName}/`))
+    fse.outputFile(`${dirPath}/${src}`, fse.readFileSync(`${dirPath}/${src}`, 'utf-8').split('="/').join(`="/stam/sites/${siteName}/`))
+    fse.outputFile(`${dirPath}/${target}`, fse.readFileSync(`${dirPath}/${target}`, 'utf-8').split('="/').join(`="/stam/sites/${siteName}/`))
 })()
