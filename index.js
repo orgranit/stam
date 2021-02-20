@@ -5,10 +5,20 @@ const fse = require('fs-extra');
 const critical = require('critical');
 
 
-(async () => {
-    const siteName = 'kre8.tv'
-    const dirPath = './sites/kre8.tv'
+const main = async (siteName) => {
     const siteUrl = `https://${siteName}/`
+
+
+    const relativePath = `sites/${siteName}`
+    const dirPath = `./${relativePath}`
+    const newUrl = `https://orgranit.github.io/stam/${relativePath}/`
+
+    const handleCORS = (filePath) => {
+        const fileContent =  fse.readFileSync(filePath, 'utf-8')
+        const fixedContent = fileContent.split('="/').join(`="/stam/sites/${siteName}/`).split(siteUrl).join(newUrl)
+        fse.outputFile(filePath, fixedContent)
+    }
+
     const stam = require("@wix/puppeteer-interception-pipeline")
     const InterceptionPipeline = stam.InterceptionPipeline
     const browser = await puppeteer.launch();
@@ -16,22 +26,24 @@ const critical = require('critical');
     // setup a pipeline
     const pipeline = new InterceptionPipeline();
     pipeline.add({
-        patterns: [{ urlPattern: "*" }],
+        patterns: [{ urlPattern: `${siteUrl}*` }],
         async responseHandler({ response, request }) {
             const {url} = request
-            if (url.includes(siteUrl)) {
-                const isRoot = url === siteUrl
-                const file = isRoot ?  'index.html' : url.replace(siteUrl, '')
-                const body = await response.readBody()
-                fse.outputFile(`${dirPath}/${file}`, body, function (err) {
-                    if (err) {
-                        return console.log(err);
-                    }
-                    console.log("The file was saved!");
-                });
-            }
+            const isRoot = url === siteUrl
+            const file = isRoot ?  'index.html' : url.replace(siteUrl, '').split('?')[0]
+            const body = await response.readBody()
+            fse.outputFile(`${dirPath}/${file}`, body, function (err) {
+                if (err) {
+                    return console.log(err);
+                }
+                console.log("The file was saved!");
+            });
 
-            return {body}
+            return {
+                action: 'modify',
+                response,
+                change: response,
+            }
 
         },
     });
@@ -79,7 +91,7 @@ const critical = require('critical');
     const src =  `index.html`
     const target =  `optimized.html`
     await critical.generate({
-        base: './sites/kre8.tv/',
+        base: `./sites/${siteName}/`,
         src,
         target,
         inline: true,
@@ -94,6 +106,9 @@ const critical = require('critical');
             },
         ]
     });
-    fse.outputFile(`${dirPath}/${src}`, fse.readFileSync(`${dirPath}/${src}`, 'utf-8').split('="/').join(`="/stam/sites/${siteName}/`))
-    fse.outputFile(`${dirPath}/${target}`, fse.readFileSync(`${dirPath}/${target}`, 'utf-8').split('="/').join(`="/stam/sites/${siteName}/`))
-})()
+
+    handleCORS(`${dirPath}/${src}`)
+    handleCORS(`${dirPath}/${target}`)
+}
+
+main('www.etsy.com')
