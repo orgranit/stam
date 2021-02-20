@@ -113,4 +113,4 @@ const main = async (siteName) => {
     handleCORS(`${dirPath}/${target}`)
 }
 
-main('www.fossil.com/fr-fr')
+main('www.zennioptical.com/')
