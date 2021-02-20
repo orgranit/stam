@@ -19,10 +19,12 @@ const critical = require('critical');
         async responseHandler({ response, request }) {
             const {url} = request
             if (url.includes(siteUrl)) {
-                const file = url.replace(siteUrl, '')
+                const isRoot = url === siteUrl
+                const file = isRoot ?  'index.html' : url.replace(siteUrl, '')
                 const body = await response.readBody()
+                const bodyFixed = isRoot ? new TextDecoder("utf-8").decode(body).split('="/').join(`="/sites/${siteName}/`) : body
                 debugger
-                fse.outputFile(`./sites/${siteName}/${file ? file : 'index.html'}`, body, function (err) {
+                fse.outputFile(`./sites/${siteName}/${file}`, bodyFixed, function (err) {
                     if (err) {
                         return console.log(err);
                     }
@@ -80,7 +82,7 @@ const critical = require('critical');
 critical.generate({
     base: './',
     src: './sites/kre8.tv/index.html',
-    target: './sites/kre8.tv/index-critical.html',
+    target: './sites/kre8.tv/optimized.html',
     inline: true,
     dimensions: [
         {
