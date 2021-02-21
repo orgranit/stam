@@ -1,0 +1,27 @@
+<!doctype html>
+<!-- zfc urlrewrite off -->
+<html>
+  <body>
+    <script>
+      (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"56124543"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//commerce.bing.com/cst/cst.js","uetq");
+
+      window.addEventListener('message', function(e) {
+        var messageData;
+        if (!e || !e.data) {
+          throw new Error('[msftUet] received strange uet tag message event.');
+        }
+        messageData = JSON.parse(e.data);
+
+        const uetEvent = messageData.microsoftUetTagEvent;
+        if (uetEvent) {
+          window.uetq = window.uetq || [];
+          window.uetq.push('event', uetEvent.name || '', uetEvent.data);
+        }
+        else {
+          throw new Error('[msftUet] received improperly formatted uet tag message.');
+        }
+      }, false);
+    </script>
+  </body>
+</html>
+<!-- zfc urlrewrite on -->
